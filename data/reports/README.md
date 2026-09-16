@@ -14,4 +14,4 @@ follow-up commit or PR to land the file here; only files actually in this folder
 public record.
 
 Load any report back into the tool via the top bar's Import menu, or by opening
-`index.html?report=reports/<file>.json`.
+`index.html?report=data/reports/<file>.json`.

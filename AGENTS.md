@@ -17,10 +17,11 @@ Running checklist for whoever, human or agent, triages feedback on this tracker.
       a short rationale, then close the issue.
 - [ ] Check for new assessment report submissions (an issue with a JSON file attached, from
       "Save Report to GitHub Tracker" → "Open a new issue"; or a pull request adding a file under
-      `reports/`). If it's an issue attachment, land the file in `reports/` yourself (a commit or
-      a small PR) before closing the issue — only files actually in `reports/` count as saved;
-      see `reports/README.md` for the filename convention. Review a PR the same way: does the
-      file belong (real report, correctly named), does anything in it look wrong or spam.
+      `data/reports/`). If it's an issue attachment, land the file in `data/reports/` yourself (a
+      commit or a small PR) before closing the issue — only files actually in `data/reports/`
+      count as saved; see `data/reports/README.md` for the filename convention. Review a PR the
+      same way: does the file belong (real report, correctly named), does anything in it look
+      wrong or spam.
 
 ## Open
 

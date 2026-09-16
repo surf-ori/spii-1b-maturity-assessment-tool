@@ -86,7 +86,7 @@ page. The top bar's Import/Export menus cover loading and saving a report
 or a custom framework by hand; "About" and "Changelog", also in the top
 bar, open as dialogs.
 
-[`examples/`](examples/) has three example POSI assessment reports based
+[`data/examples/`](data/examples/) has three example POSI assessment reports based
 on published self-assessments from real infrastructures (OpenAIRE,
 OpenAlex, HAL+/CCSD) — linked from the About dialog as one-click loads
 against the live site (see below), or load one by hand via "Import
@@ -113,7 +113,7 @@ case-insensitively) opens straight to that framework's tab, with its sidebar sec
 and every other framework's section collapsed. Selecting a framework tab in the app updates the
 URL the same way, so the address bar always reflects which framework is open and can be shared
 or bookmarked. It combines with `?report=`/`?framework=`: the three example links in the About
-dialog are `?report=examples/<file>.json#posi`, so they load the report and land straight on the
+dialog are `?report=data/examples/<file>.json#posi`, so they load the report and land straight on the
 framework it's scored against instead of the infrastructure-description tab.
 
 ## Feedback
@@ -134,13 +134,13 @@ two ways to contribute it, both landing on this same repository:
 
 - **Open a new issue** — attach the downloaded file to a new issue.
 - **Propose it as a file (pull request)** — drop the downloaded file onto GitHub's "new file"
-  page under [`reports/`](reports/). If you don't have write access (the common case), GitHub
+  page under [`data/reports/`](data/reports/). If you don't have write access (the common case), GitHub
   forks the repo for you and opens the pull request automatically — no manual fork needed.
 
 Either way, the report (including any name, description, or notes you've entered) becomes
 **public** once you submit it — the dialog says so before you pick an option. A curator reviews
 submissions the same way as other feedback before they're merged in; see
-[`reports/README.md`](reports/README.md) for the filename convention.
+[`data/reports/README.md`](data/reports/README.md) for the filename convention.
 
 ## Citing
 
