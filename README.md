@@ -137,5 +137,6 @@ Copyright (c) 2026:
 ## Credits
 
 Styling is provided by [Oat](https://oat.ink), layered with color and font
-tokens from the [SURF Design System](https://surfnet.github.io/DesignSystem/).
+tokens matching the [SPII overview](https://surf-ori.github.io/spii-overview/) page (Outfit and
+IBM Plex Mono, self-hosted under `fonts/`).
 The SURF logo in the top bar and favicon is [SURF](https://www.surf.nl/)'s own.

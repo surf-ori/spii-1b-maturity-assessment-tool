@@ -8,34 +8,105 @@
         <meta property="og:title" content="Open Science Infrastructure Self-Assessment Tool">
         <meta property="og:description" content="Self-assess an Open Science infrastructure against POSI, SPII, and OSR, then export a report or a shareable badge.">
         <meta property="og:type" content="website">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjM2cHgiIGhlaWdodD0iMTY4cHgiIHZpZXdCb3g9IjAgMCAyMzYgMTY4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkZyYW1lIENvcHk8L3RpdGxlPgogICAgPGcgaWQ9IkZyYW1lLUNvcHkiIHN0cm9rZT0ibm9uZSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2Utd2lkdGg9IjEiPgogICAgICAgIDxnIGlkPSJMYWFnXzEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwLCAzMCkiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTkwLjM0NCw2NC45MTg1NDQ0IEMxOTguOTk2LDY0LjkxODU0NDQgMjA2LDcyLjE1NDY4NzkgMjA2LDgxLjA0NDgwNyBMMjA2LDkxLjM4MjE1NDkgQzIwNiwxMDAuMjcyMjc0IDE5OC45OTYsMTA3LjUwODQxOCAxOTAuMzQ0LDEwNy41MDg0MTggTDE2Ni42NTQsMTA3LjUwODQxOCBDMTU4LjAwMiwxMDcuNTA4NDE4IDE1MC45OTgsMTAwLjI3MjI3NCAxNTAuOTk4LDkxLjM4MjE1NDkgTDE1MC45OTgsODQuOTcyOTk5MiBDMTUwLjk5OCw3My44MDg2NjM2IDE0Mi4xNCw2NC45MTg1NDQ0IDEzMS40MjgsNjQuOTE4NTQ0NCBMMTkuNTcsNjQuOTE4NTQ0NCBDOC42NTIsNjQuOTE4NTQ0NCAwLDU2LjAyODQyNTMgMCw0NC44NjQwODk2IEwwLDIwLjA1NDQ1NDggQzAsOC44OTAxMTkxNCA4Ljg1OCwwIDE5LjU3LDAgTDEzMS40MjgsMCBDMTQyLjM0NiwwIDE1MC45OTgsOC44OTAxMTkxNCAxNTAuOTk4LDIwLjA1NDQ1NDggTDE1MC45OTgsNDQuODY0MDg5NiBDMTUwLjk5OCw1Ni4wMjg0MjUzIDE1OS44NTYsNjQuOTE4NTQ0NCAxNzAuNTY4LDY0LjkxODU0NDQgTDE5MC4zNDQsNjQuOTE4NTQ0NCBaIiBpZD0iYV8xXyIgZmlsbD0iIzAwMDAwMCI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMTI0LjgzNiwzNi44MDA5NTgzIEMxMjYuODk2LDM2LjgwMDk1ODMgMTI3LjkyNiwzNS43NjcyMjM1IDEyNy45MjYsMzMuNjk5NzUzOSBDMTI3LjkyNiwzMS42MzIyODQ0IDEyNi44OTYsMzAuMzkxODAyNiAxMjQuODM2LDMwLjM5MTgwMjYgTDExNy4wMDgsMzAuMzkxODAyNiBMMTE3LjAwOCwyNC4xODkzOTM5IEwxMjkuMzY4LDI0LjE4OTM5MzkgQzEzMS40MjgsMjQuMTg5MzkzOSAxMzIuNDU4LDIzLjE1NTY1OTIgMTMyLjQ1OCwyMC44ODE0NDI2IEMxMzIuNDU4LDE4LjgxMzk3MzEgMTMxLjQyOCwxNy43ODAyMzgzIDEyOS4zNjgsMTcuNzgwMjM4MyBMMTEzLjcxMiwxNy43ODAyMzgzIEMxMTEuNjUyLDE3Ljc4MDIzODMgMTEwLjQxNiwxOC44MTM5NzMxIDExMC40MTYsMjEuMDg4MTg5NiBMMTEwLjQxNiw0My44MzAzNTQ4IEMxMTAuNDE2LDQ2LjEwNDU3MTQgMTExLjQ0Niw0Ny4xMzgzMDYxIDExMy43MTIsNDcuMTM4MzA2MSBDMTE1Ljc3Miw0Ny4xMzgzMDYxIDExNy4wMDgsNDYuMTA0NTcxNCAxMTcuMDA4LDQzLjgzMDM1NDggTDExNy4wMDgsMzYuNTk0MjExMyBDMTE3LjAwOCwzNi44MDA5NTgzIDEyNC44MzYsMzYuODAwOTU4MyAxMjQuODM2LDM2LjgwMDk1ODMgTDEyNC44MzYsMzYuODAwOTU4MyBaIE05OS4wODYsMzYuMTgwNzE3NCBDMTAxLjk3LDM0LjczMzQ4ODcgMTAzLjYxOCwzMS44MzkwMzEzIDEwMy42MTgsMjguMTE3NTg2MSBDMTAzLjYxOCwyMi4xMjE5MjQ0IDk5LjI5MiwxNy43ODAyMzgzIDkzLjExMiwxNy43ODAyMzgzIEw4My44NDIsMTcuNzgwMjM4MyBDODEuNzgyLDE3Ljc4MDIzODMgODAuNTQ2LDE4LjgxMzk3MzEgODAuNTQ2LDIxLjA4ODE4OTYgTDgwLjU0Niw0My44MzAzNTQ4IEM4MC41NDYsNDYuMTA0NTcxNCA4MS41NzYsNDcuMTM4MzA2MSA4My44NDIsNDcuMTM4MzA2MSBDODUuOTAyLDQ3LjEzODMwNjEgODcuMTM4LDQ2LjEwNDU3MTQgODcuMTM4LDQzLjgzMDM1NDggTDg3LjEzOCwzNy44MzQ2OTMxIEw5Mi43LDM3LjgzNDY5MzEgTDk1Ljk5Niw0NC44NjQwODk2IEM5Ni42MTQsNDYuMzExMzE4MyA5Ny40MzgsNDYuOTMxNTU5MiA5OC42NzQsNDYuOTMxNTU5MiBDMTAwLjMyMiw0Ni45MzE1NTkyIDEwMi4zODIsNDUuNjkxMDc3NCAxMDIuMzgyLDQzLjgzMDM1NDggQzEwMi4zODIsNDMuMjEwMTE0IDEwMi4xNzYsNDIuNTg5ODczMSAxMDEuOTcsNDEuOTY5NjMyMiBMOTkuMDg2LDM2LjE4MDcxNzQgTDk5LjA4NiwzNi4xODA3MTc0IFogTTkyLjI4OCwzMi4wNDU3NzgzIEw4Ni43MjYsMzIuMDQ1Nzc4MyBMODYuNzI2LDI0LjE4OTM5MzkgTDkyLjI4OCwyNC4xODkzOTM5IEM5NC43NiwyNC4xODkzOTM5IDk2LjgyLDI1LjQyOTg3NTcgOTYuODIsMjguMTE3NTg2MSBDOTYuODIsMzAuODA1Mjk2NiA5NC43NiwzMi4wNDU3NzgzIDkyLjI4OCwzMi4wNDU3NzgzIFogTTY2LjEyNiwzMy42OTk3NTM5IEM2Ni4xMjYsMzguMjQ4MTg3IDYzLjQ0OCw0MC45MzU4OTc0IDU5Ljc0LDQwLjkzNTg5NzQgQzU2LjAzMiw0MC45MzU4OTc0IDUzLjM1NCwzOC4yNDgxODcgNTMuMzU0LDMzLjY5OTc1MzkgTDUzLjM1NCwyMC44ODE0NDI2IEM1My4zNTQsMTguNjA3MjI2MSA1Mi4zMjQsMTcuNTczNDkxMyA1MC4wNTgsMTcuNTczNDkxMyBDNDcuOTk4LDE3LjU3MzQ5MTMgNDYuNzYyLDE4LjYwNzIyNjEgNDYuNzYyLDIwLjg4MTQ0MjYgTDQ2Ljc2MiwzMy42OTk3NTM5IEM0Ni43NjIsNDIuMTc2Mzc5MiA1Mi4zMjQsNDcuNTUxODAwMSA1OS43NCw0Ny41NTE4MDAxIEM2Ny4xNTYsNDcuNTUxODAwMSA3Mi43MTgsNDIuMTc2Mzc5MiA3Mi43MTgsMzMuNjk5NzUzOSBMNzIuNzE4LDIwLjg4MTQ0MjYgQzcyLjcxOCwxOC42MDcyMjYxIDcxLjY4OCwxNy41NzM0OTEzIDY5LjQyMiwxNy41NzM0OTEzIEM2Ny4zNjIsMTcuNTczNDkxMyA2Ni4xMjYsMTguNjA3MjI2MSA2Ni4xMjYsMjAuODgxNDQyNiBMNjYuMTI2LDMzLjY5OTc1MzkgTDY2LjEyNiwzMy42OTk3NTM5IFogTTI5LjI1Miw0MS4zNDkzOTEzIEMyNi43OCw0MS4zNDkzOTEzIDI0LjkyNiw0MC43MjkxNTA1IDIzLjY5LDQwLjMxNTY1NjYgQzIyLjY2LDM5LjkwMjE2MjcgMjEuODM2LDM5LjY5NTQxNTcgMjAuODA2LDM5LjY5NTQxNTcgQzE4Ljk1MiwzOS42OTU0MTU3IDE3LjkyMiw0MC45MzU4OTc0IDE3LjkyMiw0Mi43OTY2MiBDMTcuOTIyLDQ1Ljg5NzgyNDQgMjQuMTAyLDQ3LjU1MTgwMDEgMjkuNDU4LDQ3LjU1MTgwMDEgQzM1Ljg0NCw0Ny41NTE4MDAxIDQwLjc4OCw0NC4wMzcxMDE4IDQwLjc4OCwzOC42NjE2ODA5IEM0MC43ODgsMzMuNjk5NzUzOSAzNy40OTIsMzEuNDI1NTM3NCAzMy45OSwzMC4xODUwNTU3IEwyOC42MzQsMjguNTMxMDggQzI2LjM2OCwyNy45MTA4MzkyIDI1LjMzOCwyNy4yOTA1OTgzIDI1LjMzOCwyNS44NDMzNjk2IEMyNS4zMzgsMjQuMzk2MTQwOSAyNy42MDQsMjMuNTY5MTUzMSAyOS40NTgsMjMuNTY5MTUzMSBDMzEuNzI0LDIzLjU2OTE1MzEgMzMuMzcyLDI0LjE4OTM5MzkgMzQuNjA4LDI0LjYwMjg4NzkgQzM1LjQzMiwyNC44MDk2MzQ4IDM2LjI1NiwyNS4yMjMxMjg3IDM3LjI4NiwyNS4yMjMxMjg3IEMzOC45MzQsMjUuMjIzMTI4NyAzOS45NjQsMjMuOTgyNjQ3IDM5Ljk2NCwyMi4xMjE5MjQ0IEMzOS45NjQsMTkuMDIwNzIgMzQuNDAyLDE3LjM2Njc0NDQgMjkuNDU4LDE3LjM2Njc0NDQgQzIzLjI3OCwxNy4zNjY3NDQ0IDE4Ljc0NiwyMC44ODE0NDI2IDE4Ljc0NiwyNi4wNTAxMTY2IEMxOC43NDYsMzAuMzkxODAyNiAyMS44MzYsMzIuODcyNzY2MSAyNS4xMzIsMzMuOTA2NTAwOSBMMjkuODcsMzUuMzUzNzI5NiBDMzIuMzQyLDM2LjE4MDcxNzQgMzQuMTk2LDM2LjgwMDk1ODMgMzQuMTk2LDM4LjI0ODE4NyBDMzMuNzg0LDQwLjMxNTY1NjYgMzEuMzEyLDQxLjM0OTM5MTMgMjkuMjUyLDQxLjM0OTM5MTMgTDI5LjI1Miw0MS4zNDkzOTEzIFoiIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=">
         <!-- <link rel="stylesheet" href="https://unpkg.com/@knadh/oat/oat.min.css"> -->
         <link rel="stylesheet" href="oat.min.css">
         <style>
+            /* Self-hosted, matching spii-overview's fonts (replaces the
+               previous Google Fonts "Source Sans 3" load, which never
+               actually resolved --font-sans in this file, see the
+               2026-09-15 changelog entry below). */
+            @font-face {
+                font-family: "Outfit";
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url("fonts/outfit-400.woff2") format("woff2");
+            }
+            @font-face {
+                font-family: "Outfit";
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url("fonts/outfit-500.woff2") format("woff2");
+            }
+            @font-face {
+                font-family: "Outfit";
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url("fonts/outfit-600.woff2") format("woff2");
+            }
+            @font-face {
+                font-family: "Outfit";
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url("fonts/outfit-700.woff2") format("woff2");
+            }
+            @font-face {
+                font-family: "IBM Plex Mono";
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url("fonts/ibm-plex-mono-500.woff2") format("woff2");
+            }
+
+            /* Reskinned to match spii-overview's palette and type (see
+               https://github.com/surf-ori/spii-overview); overrides both
+               this file's own tokens (--compliant etc.) and oat.min.css's
+               base tokens (--background, --card, --accent, ...), which
+               works because these unlayered :root rules already win over
+               Oat's own @layer-wrapped defaults — see the notes on
+               [role="menuitem"] below for the same cascade-layer mechanic. */
             :root {
-                --primary: rgba(6,75,203,1);
-                --primary-foreground: rgba(255,255,255,1);
+                --background: #f6f4ec;
+                --foreground: #161f18;
+                --card: #ffffff;
+                --card-foreground: #161f18;
+                --border: #d9d4c3;
+                --input: #d9d4c3;
+                --muted: #eeebdf;
+                --muted-foreground: #4d5850;
+                --accent: #dfe9df;
+                --accent-foreground: #161f18;
+                --secondary: #eeebdf;
+                --secondary-foreground: #161f18;
+                --ring: #1f5c43;
+                --primary: #1f5c43;
+                --primary-foreground: #fbfdfb;
                 --warning: rgba(202,138,4,1);
                 --destructive: rgba(185,28,28,1);
-                --compliant: rgba(13,148,136,1);
-                --font-sans: "Source Sans 3", sans-serif;
+                --compliant: #1f5c43;
+                --font-sans: "Outfit", system-ui, sans-serif;
+                --font-mono: "IBM Plex Mono", ui-monospace, monospace;
                 --focus-ring: var(--primary);
                 --sidebar-width: 18rem;
             }
             @media (prefers-color-scheme: dark) {
                 :root {
-                    --primary: rgba(5,62,170,1);
-                    --primary-foreground: rgba(255,255,255,1);
+                    --background: #10140f;
+                    --foreground: #eae7db;
+                    --card: #161c15;
+                    --card-foreground: #eae7db;
+                    --border: #2b342a;
+                    --input: #2b342a;
+                    --muted: #1c231b;
+                    --muted-foreground: #9fad9f;
+                    --accent: #1e2c22;
+                    --accent-foreground: #eae7db;
+                    --secondary: #1c231b;
+                    --secondary-foreground: #eae7db;
+                    --ring: #59b98a;
+                    --primary: #59b98a;
+                    --primary-foreground: #10140f;
                     --warning: rgba(250,204,21,1);
                     --destructive: rgba(248,113,113,1);
-                    --compliant: rgba(16,185,129,1);
-                    --focus-ring: rgba(147,197,253,1);
+                    --compliant: #59b98a;
+                    --focus-ring: var(--primary);
                 }
                 a {
-                    color: rgba(147,197,253,1);
+                    color: #7fd1a6;
                 }
             }
 
@@ -578,6 +649,7 @@
 
             const CHANGELOG_HTML =
                 "<dl>" +
+                '<dt>2026-09-16</dt><dd>Reskinned to match the <a href="https://surf-ori.github.io/spii-overview/">SPII overview</a> page: swapped Oat’s and this tool’s own default color tokens for spii-overview’s palette (page background, cards, borders, the compliant/accent green, and hover tints), and self-hosted Outfit and IBM Plex Mono in place of the “Source Sans 3” Google Fonts load, which — per the 2026-09-15 entry below — had never actually resolved anyway. Oat’s own component structure (tabs, dialogs, dropdowns) is unchanged; only the tokens it reads from are new.</dd>' +
                 '<dt>2026-09-16</dt><dd>Moved to <a href="https://github.com/surf-ori/spii-1b-maturity-assessment-tool">github.com/surf-ori/spii-1b-maturity-assessment-tool</a>, now also live at <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/">surf-ori.github.io/spii-1b-maturity-assessment-tool</a>. This repository also doubles as SPII deliverable 1B’s feedback tracker: open an issue here to propose a correction, flag a gap, or suggest an addition.</dd>' +
                 '<dt>2026-09-16</dt><dd>Shortened two framework tab labels so they read better in the tab strip and sidebar nav: “Barcelona Declaration Assessment” is now “BD Assessment v1.0”, and “GORC International Model Assessment” is now “GORC v1.1 Assessment”. The full names (Barcelona Declaration on Open Research Information; Global Open Research Commons (GORC) International Model, version 1.1) are unchanged in each framework’s “About” accordion text — only the short `title` field used for the tab/sidebar/heading changed.</dd>' +
                 '<dt>2026-09-16</dt><dd>Added a sixth framework, the FAIR Principles Assessment (draft) — a transcription of the <a href="https://www.gofair.foundation/fair-principles">FAIR Guiding Principles</a> (Wilkinson et al., 2016) as maintained by the GO FAIR Foundation. 15 principles across the four FAIR components (Findable, Accessible, Interoperable, Reusable) — one per sub-principle (F1–F4, A1/A1.1/A1.2/A2, I1–I3, R1/R1.1–R1.3) — with each principle’s text transcribed verbatim, cross-checked against the FAIR Vocabulary ontology; only the compliant/progress/non-compliant criteria are this tool’s own, since the FAIR principles have no official pass/fail rubric of their own.</dd>' +
@@ -1706,12 +1778,12 @@
                 return (
                     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + width + " " + height + '" width="' + width + '" height="' + height + '">' +
                     '<rect width="' + width + '" height="' + height + '" fill="white" />' +
-                    '<text x="' + center + '" y="24" text-anchor="middle" font-size="12" font-family="&quot;Source Sans 3&quot;, sans-serif" font-weight="bold">' + badgeTitle + "</text>" +
+                    '<text x="' + center + '" y="24" text-anchor="middle" font-size="12" font-family="&quot;Outfit&quot;, sans-serif" font-weight="bold">' + badgeTitle + "</text>" +
                     circles +
-                    '<text x="' + center + '" y="' + (ringCenterY + 7) + '" text-anchor="middle" font-size="26" font-family="&quot;Source Sans 3&quot;, sans-serif" font-weight="bold">' + summary.percentCompliant + "%</text>" +
-                    '<text x="' + center + '" y="232" text-anchor="middle" font-size="11" font-family="&quot;Source Sans 3&quot;, sans-serif">' + name + "</text>" +
+                    '<text x="' + center + '" y="' + (ringCenterY + 7) + '" text-anchor="middle" font-size="26" font-family="&quot;Outfit&quot;, sans-serif" font-weight="bold">' + summary.percentCompliant + "%</text>" +
+                    '<text x="' + center + '" y="232" text-anchor="middle" font-size="11" font-family="&quot;Outfit&quot;, sans-serif">' + name + "</text>" +
                     activityIcons +
-                    '<text x="' + center + '" y="272" text-anchor="middle" font-size="10" font-family="&quot;Source Sans 3&quot;, sans-serif">' + date + "</text>" +
+                    '<text x="' + center + '" y="272" text-anchor="middle" font-size="10" font-family="&quot;Outfit&quot;, sans-serif">' + date + "</text>" +
                     "</svg>"
                 );
             }
