@@ -1,0 +1,44 @@
+name: Feedback
+description: Give feedback on SPII deliverable 1B, Maturity Assessment Tool.
+title: "[1B]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to give feedback on this deliverable. A curator will review this issue and record the outcome (accepted, rejected, or already covered) with a short rationale before closing it.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Your name.
+    validations:
+      required: true
+  - type: input
+    id: organisation
+    attributes:
+      label: Organisation
+      description: The institution or organisation you are affiliated with.
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Role
+      description: Your role or function.
+    validations:
+      required: true
+  - type: input
+    id: representing-infrastructure
+    attributes:
+      label: "Representing infrastructure:"
+      description: Which infrastructure or component you represent here, if any.
+    validations:
+      required: false
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: A correction, a gap, or a proposal for this deliverable.
+    validations:
+      required: true
