@@ -1,6 +1,6 @@
 # Open Science Infrastructure Self-Assessment Tool
 
-SPII deliverable 1B, Maturity Assessment Tool: part of the [SPII overview](https://surf-ori.github.io/spii-overview/).
+SPII deliverable 1B, Tool for: Maturity Assessment Tool. Part of the [SPII overview](https://surf-ori.github.io/spii-overview/).
 This repository hosts both the tool itself and its feedback/issue tracker.
 
 A self-assessment tool for Open Science infrastructures. Name your
