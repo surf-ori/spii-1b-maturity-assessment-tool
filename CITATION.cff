@@ -2,9 +2,12 @@ cff-version: 1.2.0
 message: If you use this software, please cite it as below.
 title: Open Science Infrastructure Self-Assessment Tool
 abstract: >-
-  A self-assessment tool for Open Science infrastructures against community
-  assessment frameworks such as the Principles of Open Scholarly
-  Infrastructure (POSI) v2.0.
+  A self-assessment tool for Open Science infrastructures against six
+  community assessment frameworks: the Principles of Open Scholarly
+  Infrastructure (POSI) v2.0, SPII, the Global Open Research Commons (GORC)
+  International Model, the FAIR Guiding Principles, the Barcelona
+  Declaration on Open Research Information (BD), and an adaptation of the
+  open science resilience model (OSR).
 type: software
 authors:
   - given-names: Till
