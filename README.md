@@ -112,7 +112,9 @@ report and/or a custom framework automatically from query parameters:
 case-insensitively) opens straight to that framework's tab, with its sidebar section expanded
 and every other framework's section collapsed. Selecting a framework tab in the app updates the
 URL the same way, so the address bar always reflects which framework is open and can be shared
-or bookmarked.
+or bookmarked. It combines with `?report=`/`?framework=`: the three example links in the About
+dialog are `?report=examples/<file>.json#posi`, so they load the report and land straight on the
+framework it's scored against instead of the infrastructure-description tab.
 
 ## Feedback
 
