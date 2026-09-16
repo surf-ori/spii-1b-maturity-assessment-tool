@@ -649,6 +649,7 @@
 
             const CHANGELOG_HTML =
                 "<dl>" +
+                '<dt>2026-09-17</dt><dd>Added "Save Report to GitHub Tracker" (Export menu): downloads your report, then offers to open a new issue with it attached, or propose it as a file under <code>reports/</code> via a pull request (GitHub forks this repo for you automatically if you don’t have write access). Either way it opens a warning first: the report, including any name, description, or notes you’ve written, becomes public once submitted. No account or token is needed from this app; it only opens GitHub’s own pre-filled pages.</dd>' +
                 '<dt>2026-09-16</dt><dd>Reordered the framework tabs and sidebar to SPII, POSI, GORC, FAIR, BD, OSR, and renamed three tab labels to match: “SPII v0.0.1 Assessment” is now “SPII v0.1 Assessment”, “BD Assessment v1.0” is now “BD v1.0 Assessment”, and “FAIR Principles Assessment” is now “FAIR v1.0 Assessment”. Sidebar framework sections now start collapsed (previously POSI, the only non-draft framework, started open) and behave as a single-open accordion — selecting a framework, from a tab or a sidebar link, expands its section and collapses every other one. The URL now tracks the open framework as a hash (e.g. <code>#gorc</code>), updated as you switch, and read back on load or if it changes while the page is open, so a link straight to one framework works and the address bar always matches what’s open.</dd>' +
                 '<dt>2026-09-16</dt><dd>Reskinned to match the <a href="https://surf-ori.github.io/spii-overview/">SPII overview</a> page: swapped Oat’s and this tool’s own default color tokens for spii-overview’s palette (page background, cards, borders, the compliant/accent green, and hover tints), and self-hosted Outfit and IBM Plex Mono in place of the “Source Sans 3” Google Fonts load, which — per the 2026-09-15 entry below — had never actually resolved anyway. Oat’s own component structure (tabs, dialogs, dropdowns) is unchanged; only the tokens it reads from are new.</dd>' +
                 '<dt>2026-09-16</dt><dd>Moved to <a href="https://github.com/surf-ori/spii-1b-maturity-assessment-tool">github.com/surf-ori/spii-1b-maturity-assessment-tool</a>, now also live at <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/">surf-ori.github.io/spii-1b-maturity-assessment-tool</a>. This repository also doubles as SPII deliverable 1B’s feedback tracker: open an issue here to propose a correction, flag a gap, or suggest an addition.</dd>' +
@@ -901,6 +902,10 @@
                             <span class="menuitem-title">Download Assessment Frameworks (JSON)</span>
                             <span class="menuitem-desc">Download the frameworks currently loaded, including any custom ones</span>
                         </button>
+                        <button type="button" role="menuitem" id="save-report-github-btn">
+                            <span class="menuitem-title">Save Report to GitHub Tracker</span>
+                            <span class="menuitem-desc">Contribute this assessment to the public tracker</span>
+                        </button>
                     </div>
                 </ot-dropdown>
                 <button type="button" class="ghost" commandfor="about-dialog" command="show-modal">About</button>
@@ -927,6 +932,17 @@
                     <div id="changelog-dialog-content"></div>
                     <footer>
                         <button type="button" class="outline" commandfor="changelog-dialog" command="close">Close</button>
+                    </footer>
+                </form>
+            </dialog>
+            <dialog id="save-report-dialog" closedby="any">
+                <form method="dialog">
+                    <header>
+                        <h3>Save this report to GitHub</h3>
+                    </header>
+                    <div id="save-report-dialog-content"></div>
+                    <footer>
+                        <button type="button" class="outline" commandfor="save-report-dialog" command="close">Cancel</button>
                     </footer>
                 </form>
             </dialog>
@@ -1525,6 +1541,49 @@
                 download_json_blob(build_export_object(state), "results.json");
             }
 
+            // This app doubles as SPII deliverable 1B's own feedback tracker
+            // (see CLAUDE.md), so "save to GitHub" targets this same repo.
+            const REPORT_TRACKER_REPO = "surf-ori/spii-1b-maturity-assessment-tool";
+
+            function slugify(str) {
+                const slug = (str || "").toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+                return slug || "unnamed-infrastructure";
+            }
+
+            function report_filename(state, framework) {
+                return slugify(state.name) + "-" + framework.id + "-" + (state.assessedOn || today_iso_date()) + ".json";
+            }
+
+            function build_save_report_dialog_html(state, framework, filename) {
+                const summary = compute_summary(state, framework.id);
+                const name = state.name || "Unnamed infrastructure";
+                const issueTitle = encodeURIComponent("Assessment report: " + name + " (" + framework.shortName + ")");
+                const issueBody = encodeURIComponent(
+                    "**Infrastructure:** " + name + "\n" +
+                    "**Framework:** " + framework.title + "\n" +
+                    "**Assessed on:** " + (state.assessedOn || "") + "\n" +
+                    "**Score:** " + summary.percentCompliant + "% compliant (" + summary.scoredCount + "/" + summary.totalCount + " scored)\n\n" +
+                    "Drag the downloaded `" + filename + "` file into this box to attach it.\n"
+                );
+                const issueUrl = "https://github.com/" + REPORT_TRACKER_REPO + "/issues/new?title=" + issueTitle + "&body=" + issueBody + "&labels=assessment-report";
+                const prUrl = "https://github.com/" + REPORT_TRACKER_REPO + "/new/main?filename=" + encodeURIComponent("reports/" + filename);
+                return (
+                    "<p>This downloads your report as <code>" + escape_xml(filename) + "</code>, then opens GitHub so you can add it to the public tracker. Everything in it &mdash; the infrastructure name, description, and any notes you've written &mdash; becomes public once you submit it there.</p>" +
+                    "<p>Pick one:</p>" +
+                    "<p><a class=\"button save-report-link\" data-filename=\"" + escape_xml(filename) + "\" href=\"" + issueUrl + "\" target=\"_blank\" rel=\"noopener\">Open a new issue</a><br>" +
+                    "<span class=\"menuitem-desc\">Attach the downloaded file to a new issue on the tracker.</span></p>" +
+                    "<p><a class=\"button outline save-report-link\" data-filename=\"" + escape_xml(filename) + "\" href=\"" + prUrl + "\" target=\"_blank\" rel=\"noopener\">Propose it as a file (pull request)</a><br>" +
+                    "<span class=\"menuitem-desc\">Drop the downloaded file onto GitHub's new-file page. If you don't have write access to the repo, GitHub forks it for you and opens a pull request back to this one &mdash; no manual fork needed.</span></p>"
+                );
+            }
+
+            function open_save_report_dialog() {
+                const framework = all_frameworks().find((f) => f.id === activeFrameworkId) || FRAMEWORKS[0];
+                const filename = report_filename(state, framework);
+                document.getElementById("save-report-dialog-content").innerHTML = build_save_report_dialog_html(state, framework, filename);
+                document.getElementById("save-report-dialog").showModal();
+            }
+
             function load_json(file) {
                 const reader = new FileReader();
                 reader.onload = () => {
@@ -1962,6 +2021,12 @@
             document.getElementById("export-report-btn").addEventListener("click", download_json);
             document.getElementById("print-report-btn").addEventListener("click", download_pdf);
             document.getElementById("download-frameworks-btn").addEventListener("click", download_all_frameworks);
+            document.getElementById("save-report-github-btn").addEventListener("click", open_save_report_dialog);
+            document.getElementById("save-report-dialog-content").addEventListener("click", (e) => {
+                const link = e.target.closest(".save-report-link");
+                if (!link) return;
+                download_json_blob(build_export_object(state), link.dataset.filename);
+            });
 
             function position_popover(button, popover) {
                 const rect = button.getBoundingClientRect();

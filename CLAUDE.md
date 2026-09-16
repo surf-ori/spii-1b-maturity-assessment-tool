@@ -73,3 +73,30 @@ one is, leave issues open for a human curator rather than closing them on your o
 
 If an agent drafts a closing comment or decision on an issue here, follow the
 `labeling-ai-generated-content` skill: say plainly that it was drafted with AI assistance.
+
+**Saving a report to GitHub (2026-09-17)**: the Export menu's "Save Report to GitHub Tracker"
+(`save-report-github-btn` → `open_save_report_dialog()`) is the app's one concession to needing a
+backend for a "save" feature it doesn't have: there's no token-holding server here, so it can't
+call the GitHub API directly, and putting a personal access token in client-side JS would be a
+real credential-leak risk. Instead it leans entirely on GitHub's own web UI URL schemes, which
+need no auth from this app at all: `.../issues/new?title=&body=&labels=` for the issue path, and
+`.../new/main?filename=reports/<file>.json` (no `value=` param) for the pull-request path — the
+latter is GitHub's own "propose a new file" flow, which auto-forks for a visitor without push
+access and opens the PR back to `main`. Neither URL embeds the report JSON itself (query strings
+have practical length limits well below what a GORC-sized report could reach); instead,
+`open_save_report_dialog()` triggers `download_json_blob(build_export_object(state),
+report_filename(state, framework))` when either link is clicked (delegated click listener on
+`#save-report-dialog-content`, matched on the `.save-report-link` class, reading the filename
+from `data-filename`), and the dialog's own copy tells the user to drag that downloaded file onto
+whichever GitHub page opens — both GitHub's issue-comment box and its new-file editor accept a
+dropped file directly, so this works regardless of report size. `report_filename()` /
+`slugify(state.name)` build a shared filename (`<infra-slug>-<framework-id>-<date>.json`) used
+for both the download and the pre-filled PR path's `filename=`, so the two match exactly and the
+user doesn't need to rename anything to drag-and-drop. The dialog states plainly, before either
+link, that the report becomes public once submitted (name, description, any free-text notes) —
+there's no soft-pedalling this, since it's genuinely true and the whole point of a warning is to
+say it before the user commits, not after. `reports/` (see `reports/README.md`) is a new,
+separate top-level folder for submissions that make it into the repo via the PR path or a
+follow-up commit from an issue attachment; it's deliberately not `examples/`, which stays
+curated. Submissions are triaged the same way as other feedback (see **Feedback tracker** above),
+not auto-merged.

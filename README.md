@@ -127,6 +127,21 @@ section on the SPII overview for how a curator reviews issues and records
 the outcome (accepted, rejected, or already covered) directly on the
 issue.
 
+### Saving an assessment report
+
+The Export menu's "Save Report to GitHub Tracker" downloads your report and opens a dialog with
+two ways to contribute it, both landing on this same repository:
+
+- **Open a new issue** — attach the downloaded file to a new issue.
+- **Propose it as a file (pull request)** — drop the downloaded file onto GitHub's "new file"
+  page under [`reports/`](reports/). If you don't have write access (the common case), GitHub
+  forks the repo for you and opens the pull request automatically — no manual fork needed.
+
+Either way, the report (including any name, description, or notes you've entered) becomes
+**public** once you submit it — the dialog says so before you pick an option. A curator reviews
+submissions the same way as other feedback before they're merged in; see
+[`reports/README.md`](reports/README.md) for the filename convention.
+
 ## Citing
 
 If you use this tool, please cite it using the metadata in
