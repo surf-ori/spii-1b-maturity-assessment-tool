@@ -1,0 +1,23 @@
+{
+  "title": "Open Science infrastructure maturity assessment",
+  "description": "<p>A self-assessment tool for Open Science infrastructures against the Principles of Open Scholarly Infrastructure (POSI) v2.0.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "eupl-1.2",
+  "creators": [
+    {"name": "Bey, Till", "affiliation": "SURF"},
+    {"name": "Vanderfeesten, Maurice"},
+    {"name": "Bosch, Sander"}
+  ],
+  "keywords": [
+    "open science",
+    "POSI",
+    "self-assessment",
+    "research infrastructure"
+  ],
+  "custom": {
+    "code:codeRepository": "https://github.com/surf-ori/spii-1b-maturity-assessment-tool",
+    "code:programmingLanguage": [{"id": "javascript", "title": {"en": "JavaScript"}}],
+    "code:developmentStatus": {"id": "active", "title": {"en": "Active"}}
+  }
+}

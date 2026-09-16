@@ -1,0 +1,675 @@
+{
+  "id": "gorc",
+  "title": "GORC v1.1 Assessment",
+  "shortName": "GORC",
+  "description": "A draft framework adapting the Research Data Alliance's Global Open Research Commons (GORC) International Model v1.1 — ten essential elements (Governance & Leadership, Rules of Participation & Access, Sustainability, Engagement, Human Capacity, Interoperability, Standards & Conventions, ICT Infrastructure, Services & Tools, Research Objects) for planning, developing, or operating a research commons of any kind.",
+  "aboutHtml": "<p>The <a href=\"https://doi.org/10.15497/RDA00119\">Global Open Research Commons (GORC) International Model, version 1.1</a> was developed by the Research Data Alliance (RDA) GORC International Model Working Group to provide a common framework and language for planning, developing, operating, or funding a research commons of any kind. The model organises roughly 290 attributes and features into ten essential elements — Governance & Leadership, Rules of Participation & Access, Sustainability, Engagement, Human Capacity, Interoperability, Standards & Conventions, ICT Infrastructure, Services & Tools, and Research Objects — each broken down into categories (and sometimes subcategories), with every item marked Core, Desirable, or Optional. In the model's own words: “Items with the Core consideration level do not have to be implemented but should be considered by all commons. Desirable items may be less critical for all commons to consider and may be more suited to established commons, and Optional items may be suited to commons of specific type.” The model is explicitly aspirational and not prescriptive — “not all elements and features will be applicable to all” — and implementers are expected to make intentional decisions based on their own circumstances.</p><p>This tool's GORC framework adapts the model's ten essential elements as sections and its categories (52 of them, plus a handful of Core, element-wide attributes not captured under any single category) as principles — considerably more granular than this tool's other frameworks, since the source model itself is far larger. Each principle's text and criteria are drawn directly from that category's own description and its Core/Desirable/Optional attributes, compressed here into a compliant/making-progress/not-compliant self-assessment; the original model does not itself define pass/fail criteria — this tool's criteria are an original operationalisation of it, not part of the official model. As a draft, and given the scale of the compression involved, the criteria are likely to change; the underlying <a href=\"https://docs.google.com/spreadsheets/d/1tyFpCEbLvHRE2BKy0EDyPc1Gz5w6jm9Q5RVYx2XETkM/edit?usp=sharing\">GORC IM WG Commons Model V1.1 spreadsheet</a> also includes a KPIs & Metrics sheet and Glossary not represented here.</p><p>Cite the model as: Woodford, C. J., Treloar, A., Leggott, M., Payne, K., Jones, S., Lopez Albacete, J., Madalli, D., Genova, F., Dharmawardena, K., Chibhira, N., Nyberg Åkerström, W., MacNeil, R., Nurnberger, A., Pfeiffenberger, H., Tanifuji, M., Zhang, Q., Jones, N., Sesink, L., & Wood-Charlson, E. (2024). <i>The Global Open Research Commons International Model, Version 1.1</i>. Research Data Alliance. <a href=\"https://doi.org/10.15497/RDA00119\">https://doi.org/10.15497/RDA00119</a>. Licensed <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>.</p>",
+  "draft": true,
+  "sections": [
+    {
+      "section": "Governance & Leadership",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-gov-intent",
+          "title": "Commons intent and definition",
+          "text": "The commons publishes a clear statement of its current nature, mandate, and value proposition — including how these have changed over time — identifies its community and stakeholders and how their needs intersect with the commons, and makes its mission, vision, values, and guidance principles publicly accessible.",
+          "criteria": {
+            "compliant": "A public statement of mandate and value proposition exists, the commons' community and stakeholders are identified, and mission, vision, values, and guidance principles are published and kept current.",
+            "progress": "Some of these exist internally (e.g. a mission statement) but are not all public, current, or tied to an explicit value proposition and stakeholder analysis.",
+            "non-compliant": "No public statement of the commons' mandate, community, mission, vision, or values exists."
+          },
+          "improvementAction": "Publish a mandate and value-proposition statement, identify the commons' community and stakeholders, and publish mission, vision, and values statements."
+        },
+        {
+          "id": "gorc-gov-strategy",
+          "title": "Strategic planning, funding, and risk management",
+          "text": "The commons develops and regularly reviews a strategy — covering governance structure, stakeholder strategy, sustainable operations, and an implementation roadmap — together with a funding and resourcing framework identifying financial and resource requirements, and a risk management framework covering business continuity, technology/information governance, health and safety, and human rights risks.",
+          "criteria": {
+            "compliant": "A published strategy with roadmap is regularly reviewed, a funding/resourcing framework identifies requirements, and a risk management framework (business continuity, technology/information governance, health & safety, human rights) is implemented and operationalized.",
+            "progress": "A strategy, funding framework, or risk framework exists but is informal, partial, or not regularly reviewed.",
+            "non-compliant": "No strategy, funding framework, or risk management framework exists."
+          },
+          "improvementAction": "Develop a strategy with an implementation roadmap, identify funding/resource requirements, and establish a risk management framework covering business continuity and health & safety."
+        },
+        {
+          "id": "gorc-gov-structures",
+          "title": "Organizational structures and governance/management relationship",
+          "text": "The commons defines clear working relationships between governance and management, with explicit decision-making processes, accountability systems, and transparency of corporate activities, and creates governance structures (e.g. boards) with a regularly reviewed constitution, terms of reference, and code of conduct, alongside management structures appropriate to its own characteristics.",
+          "criteria": {
+            "compliant": "Governance and management are clearly separated and documented, decision-making and accountability are explicit, and governance bodies have a published, regularly reviewed constitution/terms of reference and code of conduct.",
+            "progress": "A governance structure exists but roles, decision-making, or its founding documents are informal or outdated.",
+            "non-compliant": "No defined governance or management structure exists."
+          },
+          "improvementAction": "Document the governance structure, its constitution/terms of reference and code of conduct, and the decision-making and accountability processes that separate governance from management."
+        },
+        {
+          "id": "gorc-gov-policy",
+          "title": "Internal policy development and records",
+          "text": "The commons develops and regularly maintains policies, guidelines, and/or standard operating procedures for resourcing and for its own operations, ensures legal compliance, manages its records and information, and maintains an internal code of conduct supplemented by ethical standards and recruitment/HR practice.",
+          "criteria": {
+            "compliant": "Policies or SOPs for resourcing and operations are documented and regularly maintained, legal compliance is monitored, records are managed, and an internal code of conduct with ethical/HR standards is in place.",
+            "progress": "Some internal policies exist but are outdated, undocumented, or an internal code of conduct is missing.",
+            "non-compliant": "No internal policies, SOPs, or code of conduct exist."
+          },
+          "improvementAction": "Document internal policies/SOPs for resourcing and operations and adopt an internal code of conduct covering ethical standards and HR practice."
+        },
+        {
+          "id": "gorc-gov-quality",
+          "title": "Governance of quality, openness, and ethics for research objects and services",
+          "text": "The commons publishes statements on its level of commitment to keeping research objects, services, and tools as open as possible and as closed as necessary, and to promoting, implementing, endorsing, and/or enforcing the FAIR, CARE, and (for digital repositories) TRUST principles, environmental sustainability, and equity/diversity/inclusion commitments; it reviews the community's rights and obligations on an ongoing basis and, for repositories handling sensitive data, commits to appropriate protection measures.",
+          "criteria": {
+            "compliant": "Public statements of commitment to FAIR, CARE, and (where applicable) TRUST principles and environmental sustainability exist, community rights and obligations are reviewed on an ongoing basis through documented accountability measures, and sensitive-data protections are in place where relevant.",
+            "progress": "Some commitments (e.g. to FAIR) exist but are not comprehensive, public, or regularly reviewed.",
+            "non-compliant": "No public statements of commitment to FAIR, CARE, TRUST, or environmental sustainability principles exist, and community rights and obligations are not reviewed."
+          },
+          "improvementAction": "Publish statements of commitment to FAIR, CARE, and TRUST (where applicable) and environmental sustainability, and establish a regular review of community rights, obligations, and accountability measures."
+        }
+      ]
+    },
+    {
+      "section": "Rules of Participation & Access",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-rpa-rights",
+          "title": "Rights and obligations of the commons community",
+          "text": "The commons defines who can participate as a User or Provider (with direct access and AAI rights), and publishes a coherent set of policies covering access, reuse (including IP, licensing, and copyright), allocation of resources, privacy, retention, and attribution for its holdings.",
+          "criteria": {
+            "compliant": "The commons community (Users/Providers) is clearly defined, and access, reuse, resource-allocation, privacy, retention, and attribution policies are all published and openly available.",
+            "progress": "Some of these policies exist but are incomplete, unpublished, or the community definition is unclear.",
+            "non-compliant": "No published policies on access, reuse, privacy, retention, or attribution exist, and the commons community is not defined."
+          },
+          "improvementAction": "Publish a rights-and-obligations policy document (or set of policies) covering access, reuse, resource allocation, privacy, retention, and attribution, and define who counts as a User or Provider."
+        },
+        {
+          "id": "gorc-rpa-accountability",
+          "title": "Accountability of the commons community",
+          "text": "The commons publishes an acceptable use policy (terms of use/service) for Users, Providers, and third-party service providers, sets out the consequences and liability for research objects not meeting quality expectations or for breach of policy, and maintains a community-facing code of conduct.",
+          "criteria": {
+            "compliant": "An acceptable use policy, consequences/liability for policy breaches or quality failures, and a community-facing code of conduct are all published.",
+            "progress": "Some of these exist (e.g. a code of conduct) but an acceptable use policy or defined consequences for misuse are missing or informal.",
+            "non-compliant": "No acceptable use policy, consequences for misuse, or code of conduct exist."
+          },
+          "improvementAction": "Publish an acceptable use policy defining consequences and liability for misuse or quality failures, and adopt a community-facing code of conduct."
+        }
+      ]
+    },
+    {
+      "section": "Sustainability",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-sus-resourcing",
+          "title": "Resourcing and capacity-building plans",
+          "text": "The commons has plans, schemes, and implementations for a sustainable business model and for management of human resources (including retaining accumulated knowledge) on the medium and long term, scaled appropriately to its own maturity — from a minimal viable plan for a young commons to scalable plans for a mature one.",
+          "criteria": {
+            "compliant": "A medium/long-term business model and human-resources sustainability plan exist and are scaled to the commons' own maturity.",
+            "progress": "Some resourcing plans exist but are ad hoc or not scaled to the commons' maturity or growth trajectory.",
+            "non-compliant": "No medium- or long-term resourcing, business model, or human-resources sustainability plan exists."
+          },
+          "improvementAction": "Develop a business-model sustainability plan and a human-resources plan (covering knowledge retention) appropriate to the commons' current stage of maturity."
+        },
+        {
+          "id": "gorc-sus-stewardship",
+          "title": "Stewardship of research objects, services, and tools",
+          "text": "The commons has medium- and long-term plans for the stewardship, contextualization, usability, and accessibility of its research objects, services, and tools — covering ICT infrastructure, human resources, and operations considerations during scale-up or scale-down — including transition plans (for cessation, migration, or temporary unavailability) and scalability plans.",
+          "criteria": {
+            "compliant": "Stewardship plans exist covering ICT, human-resources, and operational considerations for scaling, plus documented transition and scalability plans.",
+            "progress": "Some stewardship considerations exist but transition or scalability plans are missing or undocumented.",
+            "non-compliant": "No stewardship, transition, or scalability plans exist for research objects, services, or tools."
+          },
+          "improvementAction": "Draft transition plans (for cessation, migration, or maintenance windows) and scalability plans covering ICT, human resources, and operations."
+        },
+        {
+          "id": "gorc-sus-trust",
+          "title": "Building and maintaining community trust",
+          "text": "The commons has plans, schemes, and implementations focused on the social agency needed to operate and build community trust — relating to governance strategy, rules of participation and access, and engagement — capturing values, co-design, and equity of outcomes, and showcased through appropriate and accessible KPIs and metrics.",
+          "criteria": {
+            "compliant": "A documented approach to building and maintaining community trust exists, linked to governance and engagement, and is showcased through public KPIs/metrics.",
+            "progress": "Some trust-building activity happens but is not documented, linked to governance/engagement, or measured.",
+            "non-compliant": "No plan or activity for building or maintaining community trust exists."
+          },
+          "improvementAction": "Document a trust-building approach tied to governance and engagement, capturing values and co-design, and publish relevant KPIs or metrics."
+        }
+      ]
+    },
+    {
+      "section": "Engagement",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-eng-plan",
+          "title": "Communication and engagement planning",
+          "text": "The commons implements a structured, coordinated communication and engagement plan defining its intent, content, audience, and media/frequency, and maintains documented, public processes — including culturally appropriate materials and translations where relevant — to sustain a high level of transparency with stakeholders and the community.",
+          "criteria": {
+            "compliant": "A structured communication/engagement plan (intent, content, audience, media/frequency) is documented and publicly transparent, with culturally appropriate materials where relevant.",
+            "progress": "Some communication happens but is not structured into a documented plan, or transparency is inconsistent.",
+            "non-compliant": "No structured communication or engagement plan exists, and processes are not transparent to the community."
+          },
+          "improvementAction": "Draft a communication and engagement plan defining intent, content, audience, and channels/frequency, and publish it for transparency."
+        },
+        {
+          "id": "gorc-eng-feedback",
+          "title": "Community input and feedback",
+          "text": "The commons uses structured feedback mechanisms to acquire community input, attributes and acknowledges contributions once received, and responds transparently to how feedback was used — feeding the response back into a new cycle of structured input.",
+          "criteria": {
+            "compliant": "Structured feedback mechanisms exist, contributions are attributed and acknowledged, and the commons publicly reports how feedback was used.",
+            "progress": "Feedback is collected but attribution or a documented response on how it was used is missing.",
+            "non-compliant": "No structured mechanism exists for collecting or responding to community feedback."
+          },
+          "improvementAction": "Set up a structured feedback mechanism, and commit to acknowledging contributions and reporting back on how input was used."
+        },
+        {
+          "id": "gorc-eng-promotion",
+          "title": "Active promotion and incentivisation to participate",
+          "text": "The commons actively promotes itself to intended audiences — including engagement with research institution librarians and information professionals — and incentivises participation through consultations, navigational support, and funding competitions or opportunities for researchers.",
+          "criteria": {
+            "compliant": "The commons actively promotes participation to its intended audiences and offers direct incentives (e.g. consultations, funding opportunities) to participate.",
+            "progress": "Some promotion happens but there are no structured incentives or consultations for participation.",
+            "non-compliant": "No active promotion or incentivisation of participation takes place."
+          },
+          "improvementAction": "Establish an active-promotion plan for intended audiences and introduce incentives such as consultations, events, or funding opportunities for participation."
+        },
+        {
+          "id": "gorc-eng-partnerships",
+          "title": "Engagement with other commons and institutions",
+          "text": "The commons engages with other research commons, research infrastructure hosts, research institutions, and research funders, including partnering on active research projects, programs, and institutes where appropriate.",
+          "criteria": {
+            "compliant": "The commons has active, documented engagement with peer commons, infrastructure hosts, institutions, or funders, including partnerships on active research projects where relevant.",
+            "progress": "Some informal contact with peer commons or institutions exists but no active partnerships or documented engagement.",
+            "non-compliant": "No engagement with other commons, research institutions, or funders exists."
+          },
+          "improvementAction": "Identify and engage with peer research commons, infrastructure hosts, and funders, and consider partnering on active research projects or programs."
+        }
+      ]
+    },
+    {
+      "section": "Human Capacity",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-hc-internal",
+          "title": "Internal capacity and working conditions",
+          "text": "The commons prefers internal appointments to grow expertise, maintains capacity to manage administrative and operational/infrastructure tasks, has offboarding/succession plans, enacts EDII (Equity, Diversity, Inclusivity, Indigenization) commitments for internal personnel and the commons community, and regularly reviews personnel working conditions and requirements.",
+          "criteria": {
+            "compliant": "The commons documents internal capacity-building, offboarding/succession plans, an EDII commitment, and regularly reviews personnel working conditions.",
+            "progress": "Some internal-capacity practices exist but EDII commitments, succession planning, or working-condition reviews are missing or informal.",
+            "non-compliant": "No internal capacity planning, EDII commitment, or review of personnel working conditions exists."
+          },
+          "improvementAction": "Document succession/offboarding plans, adopt an EDII commitment for personnel and community, and schedule regular reviews of working conditions."
+        },
+        {
+          "id": "gorc-hc-service-skills",
+          "title": "Skills for planning and assessing service delivery",
+          "text": "The commons develops use cases for its services and platforms, prioritizes identified needs and derived user requirements, continuously assesses its plans and deployments, and implements a continuous-improvement mechanism.",
+          "criteria": {
+            "compliant": "Use cases are developed for services/platforms, user needs are prioritized, and an ongoing assessment and continuous-improvement mechanism is implemented.",
+            "progress": "Some service planning happens but without documented use cases or a continuous-improvement mechanism.",
+            "non-compliant": "No use cases, needs prioritization, or continuous-improvement mechanism exist for service delivery."
+          },
+          "improvementAction": "Document use cases for key services, prioritize user needs formally, and implement a continuous-improvement mechanism."
+        },
+        {
+          "id": "gorc-hc-community-skills",
+          "title": "Skill requirements for the commons community",
+          "text": "The commons documents and lowers the skill requirements expected of its community — providing guides (including culturally appropriate materials and translations where relevant) that explain the rules of participation and access, and a data policy covering definitions, licensing, availability statements, and data management plans.",
+          "criteria": {
+            "compliant": "Guides that ease skill requirements and explain the rules of participation and access are published, and a data policy is documented.",
+            "progress": "Some documentation exists but is incomplete, not culturally adapted, or lacks a data policy.",
+            "non-compliant": "No guides or data policy exist to ease skill requirements for the commons community."
+          },
+          "improvementAction": "Publish guides that lower skill requirements and explain participation rules, and document a data policy covering licensing and data management expectations."
+        },
+        {
+          "id": "gorc-hc-ease-of-use",
+          "title": "Ease of use for the commons community",
+          "text": "The commons employs and tests effective user-centred design — UX design and usability as priorities in user-facing services and tools — for all commons community groups, specifically providers and users.",
+          "criteria": {
+            "compliant": "User-centred design is employed and tested for user-facing services and tools, for both providers and users.",
+            "progress": "Some usability consideration exists but without formal user-centred design testing.",
+            "non-compliant": "No user-centred design or usability testing is applied to the commons' services and tools."
+          },
+          "improvementAction": "Introduce user-centred design practices, including usability testing, for user-facing services and tools."
+        },
+        {
+          "id": "gorc-hc-training",
+          "title": "Training and education",
+          "text": "The commons develops, delivers, and evaluates training and education programs for individuals and groups in its community — considering content and audience — and maintains an ongoing training program for its own internal personnel to sustain and grow internal capacity.",
+          "criteria": {
+            "compliant": "Training and education programs are developed, delivered, and evaluated for the community, alongside an ongoing internal-personnel training program.",
+            "progress": "Some training exists but is not evaluated, or no ongoing internal-personnel training program exists.",
+            "non-compliant": "No training or education programs are offered to the community or internal personnel."
+          },
+          "improvementAction": "Develop and deliver training programs for the community, evaluate their impact, and establish an ongoing internal-training program for personnel."
+        }
+      ]
+    },
+    {
+      "section": "Interoperability",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-iop-technical",
+          "title": "Technical interoperability (syntactic and semantic)",
+          "text": "The commons has plans and mechanisms to create and maintain syntactic interoperability (compatible file/data formats and APIs) and semantic interoperability (metadata, data, and research objects using standardized, community-endorsed, FAIR-compliant vocabularies) over time, plus other technical mechanisms such as shared security frameworks and API search-standard compliance.",
+          "criteria": {
+            "compliant": "Plans and mechanisms for both syntactic interoperability (formats, APIs) and semantic interoperability (standardized vocabularies) exist and are actively maintained.",
+            "progress": "Some interoperable formats or vocabularies are used, but without a documented plan to maintain them over time.",
+            "non-compliant": "No plans or mechanisms exist for syntactic or semantic interoperability."
+          },
+          "improvementAction": "Document a plan for maintaining syntactic interoperability (formats, APIs) and semantic interoperability (standardized, FAIR-compliant vocabularies) over time."
+        },
+        {
+          "id": "gorc-iop-organizational",
+          "title": "Organizational interoperability and multilingualism",
+          "text": "The commons has plans and mechanisms to create and maintain organizational interoperability — aligning business processes, responsibilities, and expectations with other organizations — including, for non-domain-specific commons, addressing domain-specific needs, and, where appropriate and possible, addressing the multilingualism of its documentation, services, tools, and engagement.",
+          "criteria": {
+            "compliant": "Plans for organizational interoperability with other commons/institutions exist and are maintained, and multilingualism is addressed where appropriate.",
+            "progress": "Some organizational alignment with partners exists but is informal, or multilingualism is not considered.",
+            "non-compliant": "No organizational interoperability plans exist with other organizations or commons."
+          },
+          "improvementAction": "Document mechanisms for organizational interoperability with partner organizations and commons, and consider multilingual support for documentation and services."
+        },
+        {
+          "id": "gorc-iop-legal",
+          "title": "Legal interoperability",
+          "text": "By default, access to and reuse of research objects is open and unrestricted, or granted with the fewest limitations possible; a licence for reuse is required for all research objects and tools, licences are enumerated and harmonised for seamless exchange, rights-holders are identified before dissemination, and legal aspects are encoded in a machine-actionable format enabling automated provision of services and data.",
+          "criteria": {
+            "compliant": "Access/reuse is open by default with minimal restrictions, licences are required, enumerated, and harmonised, and legal aspects are machine-actionable where relevant.",
+            "progress": "Licences exist for some research objects but are not harmonised, machine-actionable, or applied consistently.",
+            "non-compliant": "No licensing or open-by-default reuse policy exists for research objects."
+          },
+          "improvementAction": "Require and harmonise reuse licences for all research objects and tools, and move toward machine-actionable encoding of legal/rights information."
+        }
+      ]
+    },
+    {
+      "section": "Standards & Conventions",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-std-research-object",
+          "title": "Research object standards and conventions",
+          "text": "The commons defines community-supported standards and conventions for research object content, format, and access method, and ensures ongoing sustainability of its standards, conventions, and guidelines — including maintenance, updates, deprecation, and checks for obsolescence.",
+          "criteria": {
+            "compliant": "Standards for research object content, format, and access method are documented and community-supported, with a process for maintaining/updating them over time.",
+            "progress": "Some standards exist but are not documented, community-supported, or actively maintained.",
+            "non-compliant": "No standards or conventions exist for research object content, format, or access."
+          },
+          "improvementAction": "Document community-supported standards for research object content, format, and access, and set up a process to review and update them regularly."
+        },
+        {
+          "id": "gorc-std-metadata",
+          "title": "Metadata standards and conventions",
+          "text": "The commons defines community-supported standards and conventions for metadata content (descriptive, structural, administrative), format, and access method, aimed at making associated digital objects discoverable, accessible, and usable.",
+          "criteria": {
+            "compliant": "Metadata content, format, and access-method standards are documented and applied consistently across the commons' holdings.",
+            "progress": "Metadata standards exist but are applied inconsistently or only partially documented.",
+            "non-compliant": "No metadata standards or conventions are defined."
+          },
+          "improvementAction": "Document and apply consistent metadata content, format, and access-method standards across all holdings."
+        },
+        {
+          "id": "gorc-std-semantic",
+          "title": "Semantic object standards and conventions",
+          "text": "The commons defines standards and conventions for semantic object content, format, and access method — in addition to applicable research object and metadata standards — and maps its semantic objects to foundational ontologies where possible.",
+          "criteria": {
+            "compliant": "Semantic object standards (content, format, access) are documented and semantic objects are mapped to foundational ontologies.",
+            "progress": "Some semantic objects exist but without documented standards or ontology mappings.",
+            "non-compliant": "No standards or ontology mappings exist for semantic objects."
+          },
+          "improvementAction": "Document semantic object standards and map semantic objects to foundational ontologies."
+        },
+        {
+          "id": "gorc-std-software",
+          "title": "Application, software, and tool standards and conventions",
+          "text": "The commons defines standards and conventions for applications, software, services, and tools — in addition to applicable research object and metadata standards — including demonstrated, reproducible build and distribution procedures and relevant conventions for computational workflows.",
+          "criteria": {
+            "compliant": "Software/services and tools follow documented, reproducible build/distribution procedures and computational-workflow conventions.",
+            "progress": "Some software follows conventions but build/distribution is not consistently reproducible or documented.",
+            "non-compliant": "No standards or conventions govern software, services, or tools build/distribution."
+          },
+          "improvementAction": "Document reproducible build and distribution procedures and workflow conventions for the commons' software, services, and tools."
+        },
+        {
+          "id": "gorc-std-quality",
+          "title": "Quality standards, conventions, and guidelines",
+          "text": "The commons provides quality guidelines that let users evaluate the fitness-for-purpose of research objects, services, and tools before and during deposit/integration — with well-defined triggers for appraisal decisions, clarity on who is responsible for appraisal, and standards for validating and certifying compliance.",
+          "criteria": {
+            "compliant": "Quality guidelines with clear appraisal triggers, responsibility, and a validation/certification process are documented and applied.",
+            "progress": "Some quality review happens but without documented triggers, responsibility, or a certification process.",
+            "non-compliant": "No quality guidelines or appraisal process exist for research objects, services, or tools."
+          },
+          "improvementAction": "Document quality guidelines with clear appraisal triggers, assign responsibility for appraisal, and define a validation/certification process."
+        },
+        {
+          "id": "gorc-std-pid",
+          "title": "PID standards and conventions",
+          "text": "The commons associates persistent identifiers (PIDs) with all research objects (and, where available, other relevant objects), uses widely used and documented PID standards/services capable of managing complex research-object lifecycles, and follows documented approaches for PID resolution.",
+          "criteria": {
+            "compliant": "PIDs are consistently assigned using widely used, documented PID standards/services, and documented resolution approaches are in place.",
+            "progress": "PIDs are used for some research objects but inconsistently, or resolution approaches are undocumented.",
+            "non-compliant": "No PID standards, services, or resolution approaches are used."
+          },
+          "improvementAction": "Adopt a widely used, documented PID standard/service for all research objects and document the resolution approach used."
+        },
+        {
+          "id": "gorc-std-aai",
+          "title": "Authentication and authorization protocols",
+          "text": "The commons implements authentication and authorization protocols for research objects and metadata, with the ability to apply different access levels in the resolution protocol as part of the access process.",
+          "criteria": {
+            "compliant": "Authentication and authorization protocols with configurable access levels are implemented for both research objects and metadata.",
+            "progress": "Basic authentication exists but without differentiated access levels or metadata-specific protocols.",
+            "non-compliant": "No authentication or authorization protocols are implemented."
+          },
+          "improvementAction": "Implement authentication and authorization protocols with configurable access levels for research objects and metadata."
+        },
+        {
+          "id": "gorc-std-catalogue",
+          "title": "Standards for the commons catalogue",
+          "text": "The commons defines standards and conventions for its catalogue of digital objects, including research objects, services, and tools, so the catalogue is consistent, searchable, and interoperable with other catalogues.",
+          "criteria": {
+            "compliant": "Documented standards govern how the commons' catalogue of digital objects, services, and tools is structured and maintained.",
+            "progress": "A catalogue exists but without documented standards or conventions.",
+            "non-compliant": "No catalogue of digital objects, services, or tools exists."
+          },
+          "improvementAction": "Document standards and conventions for the commons' catalogue of digital objects, services, and tools."
+        },
+        {
+          "id": "gorc-std-compliance",
+          "title": "Standards for regulatory and ethical compliance",
+          "text": "The commons defines standards and conventions for regulatory and ethical compliance — including equitable access to information, resources, services, and tools, and a response convention for detected data breaches where required by local legislation (e.g. GDPR).",
+          "criteria": {
+            "compliant": "Documented standards address regulatory/ethical compliance, equitable access, and a data-breach response convention where legally required.",
+            "progress": "Some compliance awareness exists but without a documented breach-response convention or equitable-access standard.",
+            "non-compliant": "No standards or conventions for regulatory/ethical compliance or data-breach response exist."
+          },
+          "improvementAction": "Document standards for equitable access and regulatory/ethical compliance, including a data-breach response convention where legislation requires it."
+        },
+        {
+          "id": "gorc-std-workflows",
+          "title": "Standards for workflows and interexchange",
+          "text": "The commons documents standards and conventions supporting and describing mechanisms, infrastructure, and plans for the specific workflows, use cases, and types of interexchange within the commons that are not captured by its other standards.",
+          "criteria": {
+            "compliant": "Workflow- and interexchange-specific standards not covered elsewhere are documented and maintained.",
+            "progress": "Some workflow conventions exist informally but are undocumented.",
+            "non-compliant": "No standards or conventions exist for the commons' specific workflows or interexchange mechanisms."
+          },
+          "improvementAction": "Document any workflow- or interexchange-specific standards and conventions not already covered by other standards categories."
+        }
+      ]
+    },
+    {
+      "section": "ICT Infrastructure",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-ict-general",
+          "title": "General ICT infrastructure practices",
+          "text": "The commons provides secure, vendor-independent web interfaces for its ICT infrastructure; designs infrastructure to scale with changing volume, complexity, and velocity while ensuring baseline operations and redundancy; and reviews and updates its ICT infrastructure regularly — including considerations for environmental sustainability, and for hardware and software maintenance, upgrades, and replacement — across network, compute, storage, and cybersecurity/AAI.",
+          "criteria": {
+            "compliant": "Secure web interfaces exist, infrastructure is designed to scale with redundancy, and a regular review/update cycle covers environmental sustainability and hardware/software maintenance across all infrastructure categories.",
+            "progress": "Infrastructure exists but scaling, redundancy, environmental sustainability, or maintenance scheduling is ad hoc rather than planned.",
+            "non-compliant": "No regular review, scaling plan, or maintenance/environmental sustainability considerations exist for ICT infrastructure."
+          },
+          "improvementAction": "Schedule regular ICT infrastructure reviews covering scaling, redundancy, environmental sustainability, and hardware/software maintenance and replacement."
+        },
+        {
+          "id": "gorc-ict-network",
+          "title": "Network infrastructure",
+          "text": "The commons has knowledge and management of its network infrastructure, covering both internal network infrastructure (for connecting compute and storage) and external network infrastructure appropriate to its national, regional, or discipline-specific context.",
+          "criteria": {
+            "compliant": "Internal and external network infrastructure is documented, managed, and appropriate to the commons' operating context.",
+            "progress": "Internal network infrastructure is managed but external network needs are not addressed or documented.",
+            "non-compliant": "No documented knowledge or management of network infrastructure exists."
+          },
+          "improvementAction": "Document and actively manage both internal and external network infrastructure appropriate to the commons' context."
+        },
+        {
+          "id": "gorc-ict-compute",
+          "title": "Compute infrastructure",
+          "text": "The commons has knowledge and management of its compute infrastructure, with base computing infrastructure for stable, minimum-viable operation and, where relevant, add-on or federated computing infrastructure for advanced or specialised operations.",
+          "criteria": {
+            "compliant": "Base computing infrastructure is documented and managed, with add-on or federated compute in place where the commons' needs require it.",
+            "progress": "Base compute infrastructure exists but is not formally documented or managed.",
+            "non-compliant": "No documented compute infrastructure or management exists."
+          },
+          "improvementAction": "Document and manage base computing infrastructure, and consider add-on or federated compute for specialised operations."
+        },
+        {
+          "id": "gorc-ict-storage",
+          "title": "Storage infrastructure",
+          "text": "The commons has knowledge and management of reliable, secure, and scalable storage infrastructure, with appropriate direct-attached storage and, where relevant, network-based (cloud) or federated storage supporting different information containers.",
+          "criteria": {
+            "compliant": "Direct-attached storage is documented and managed, with network-based or federated storage in place where the commons' needs require it.",
+            "progress": "Storage exists but is not formally documented, managed, or scaled to different information container types.",
+            "non-compliant": "No documented storage infrastructure or management exists."
+          },
+          "improvementAction": "Document and manage storage infrastructure, and evaluate whether network-based or federated storage is needed."
+        },
+        {
+          "id": "gorc-ict-os",
+          "title": "Foundational operating system infrastructure",
+          "text": "The commons has knowledge and management of its foundational operating system, with infrastructure configurations version-controlled and performed through code and data pipelines, and ideally automated deployment and resource provisioning.",
+          "criteria": {
+            "compliant": "Infrastructure configurations are version-controlled and managed through code/data pipelines, with automated deployment where appropriate.",
+            "progress": "The operating system is managed but configurations are not version-controlled or deployment is entirely manual.",
+            "non-compliant": "No documented management of the foundational operating system or its configurations exists."
+          },
+          "improvementAction": "Version-control infrastructure configurations and manage them through code/data pipelines, automating deployment where feasible."
+        },
+        {
+          "id": "gorc-ict-aai",
+          "title": "Authentication and authorization infrastructure (AAI)",
+          "text": "The commons maintains base authentication and authorization infrastructure (AAI) for minimum viable operation, with add-on or federated AAI infrastructure shared with partners where relevant.",
+          "criteria": {
+            "compliant": "Base AAI infrastructure is in place and documented, with add-on or federated AAI available where the commons partners with other organizations.",
+            "progress": "Basic authentication exists but is not documented as AAI infrastructure, or federation with partners is absent despite need.",
+            "non-compliant": "No authentication or authorization infrastructure exists."
+          },
+          "improvementAction": "Establish and document base AAI infrastructure, and consider federated AAI with partner organizations."
+        }
+      ]
+    },
+    {
+      "section": "Services & Tools",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-st-general",
+          "title": "Service and tool maintenance and sustainability",
+          "text": "The commons ensures the consistent availability, improvement, and viability of its services and tools — with periodic testing and maintenance planned on a reasonable timeline — and performs and publishes FAIR self-assessments of how each service enables, respects, or reduces the FAIR principles for the data it operates on.",
+          "criteria": {
+            "compliant": "Services and tools undergo planned periodic testing and maintenance, and FAIR self-assessments are performed and published.",
+            "progress": "Some testing/maintenance happens but is not scheduled, or FAIR self-assessments are not performed or published.",
+            "non-compliant": "No planned testing/maintenance or FAIR self-assessment is performed for services and tools."
+          },
+          "improvementAction": "Schedule periodic testing and maintenance for services and tools, and perform and publish FAIR self-assessments."
+        },
+        {
+          "id": "gorc-st-repositories",
+          "title": "Research object repositories",
+          "text": "The commons provides repositories for each kind of research object it supports (research data, publications/documentation, research software, semantic objects) with deposit services and tools, storage services managing temporary through long-term needs, and integrity/quality-control mechanisms for both research objects and their metadata.",
+          "criteria": {
+            "compliant": "Repositories exist for each supported research object type with deposit and storage services, and documented integrity/quality-control mechanisms for objects and metadata.",
+            "progress": "Repositories exist for some research object types but lack quality-control mechanisms or comprehensive storage tiers.",
+            "non-compliant": "No repositories or deposit services exist for the commons' research objects."
+          },
+          "improvementAction": "Establish repositories with deposit services for each supported research object type, and implement integrity/quality-control mechanisms for objects and metadata."
+        },
+        {
+          "id": "gorc-st-discovery",
+          "title": "Discovery services",
+          "text": "The commons offers a platform or portal to discover research objects, harvesting or aggregating metadata from external repositories and commons, and providing a harvestable metadata service so others can harvest metadata describing its own research objects, services, and tools.",
+          "criteria": {
+            "compliant": "A discovery platform exists that both harvests external metadata and provides a harvestable metadata service for others.",
+            "progress": "A discovery platform exists but only supports one direction (harvesting or being harvested), not both.",
+            "non-compliant": "No discovery service or metadata harvesting capability exists."
+          },
+          "improvementAction": "Provide a discovery platform that both harvests external metadata and exposes a harvestable metadata service of its own."
+        },
+        {
+          "id": "gorc-st-research-tasks",
+          "title": "Services and tools for direct research tasks",
+          "text": "The commons offers consultation services and a platform-as-a-service space for developing and using software, along with data acquisition, analysis/processing/visualization, and data/research-object management services and tools that support direct research tasks.",
+          "criteria": {
+            "compliant": "Consultation services, a platform-as-a-service space, and data acquisition/analysis/management tools are all available to the community.",
+            "progress": "Some direct-research tools exist (e.g. data acquisition) but consultation services or a platform-as-a-service are missing.",
+            "non-compliant": "No services or tools supporting direct research tasks are offered."
+          },
+          "improvementAction": "Offer consultation services and a platform-as-a-service alongside data acquisition, analysis, and management tools for direct research tasks."
+        },
+        {
+          "id": "gorc-st-workflows",
+          "title": "Services and tools for workflows and middleware",
+          "text": "The commons provides services and tools that enable workflows and middleware, connecting and coordinating other services and tools across the commons.",
+          "criteria": {
+            "compliant": "Workflow and middleware services are available and documented, connecting the commons' other services and tools.",
+            "progress": "Some workflow capability exists informally but is not offered as a documented, supported service.",
+            "non-compliant": "No workflow or middleware services or tools are provided."
+          },
+          "improvementAction": "Establish documented workflow and middleware services or tools that connect the commons' other services."
+        },
+        {
+          "id": "gorc-st-pid",
+          "title": "Persistent identifier services",
+          "text": "The commons uses a global PID service that ensures continuous resolvability of PIDs — persistence of the identifier itself, the binding between identifier and object, and the resolution service — and supports discovery of PIDs from metadata and vice versa.",
+          "criteria": {
+            "compliant": "A global PID service with persistent identifiers, bindings, and resolution is used, and PIDs can be discovered from metadata and vice versa.",
+            "progress": "PIDs are assigned but resolution, persistence, or metadata-linked discovery is inconsistent.",
+            "non-compliant": "No persistent identifier service is used for the commons' research objects."
+          },
+          "improvementAction": "Adopt a global PID service ensuring persistent, resolvable identifiers, and enable discovery of PIDs from metadata and vice versa."
+        },
+        {
+          "id": "gorc-st-vocabulary",
+          "title": "Vocabulary and semantic object services",
+          "text": "The commons offers a standalone or integrated vocabulary and semantic object service, which may be used independently or integrated with other services and tools such as repositories.",
+          "criteria": {
+            "compliant": "A vocabulary/semantic object service is available, whether standalone or integrated with repositories and other services.",
+            "progress": "Vocabularies are used but no dedicated service exists for managing or exposing them.",
+            "non-compliant": "No vocabulary or semantic object service is offered."
+          },
+          "improvementAction": "Establish a vocabulary and semantic object service, standalone or integrated with existing repositories."
+        },
+        {
+          "id": "gorc-st-data-management",
+          "title": "Data management services and tools",
+          "text": "The commons offers data management services and tools covering all forms of data and information that pass through the commons, including ancillary data.",
+          "criteria": {
+            "compliant": "Data management services and tools cover all forms of data passing through the commons, including ancillary data.",
+            "progress": "Data management tools exist for primary research data but not for ancillary or secondary data types.",
+            "non-compliant": "No data management services or tools are offered."
+          },
+          "improvementAction": "Extend data management services and tools to cover all forms of data and information passing through the commons."
+        },
+        {
+          "id": "gorc-st-catalogue",
+          "title": "Commons catalogue of services and tools",
+          "text": "The commons maintains an open, searchable catalogue of all its services and tools (including those hosting research objects), ideally with a marketplace or API for external service providers, and quality-control mechanisms — including API, integration, functional, and performance testing, documentation, security, and support — for third-party services offered through the catalogue.",
+          "criteria": {
+            "compliant": "An open, searchable catalogue exists, with quality-control (testing, documentation, security, support) applied to services offered through it, including third-party ones.",
+            "progress": "A catalogue exists but lacks quality-control mechanisms or a marketplace/API for external providers.",
+            "non-compliant": "No catalogue of services and tools exists."
+          },
+          "improvementAction": "Build an open, searchable catalogue of services and tools with documented quality-control mechanisms, and consider a marketplace or API for external providers."
+        },
+        {
+          "id": "gorc-st-security",
+          "title": "Security and identification services (AAI)",
+          "text": "The commons implements cyber security measures targeting system and holdings vulnerabilities and threats, user authentication, identity access and management, and authorization — controlling access rights for groups and users on research objects, versions, and services — with mechanisms to assess identity verification and manage groups.",
+          "criteria": {
+            "compliant": "Cyber security, user authentication, identity/access management, and role-based authorization are all implemented and documented.",
+            "progress": "Basic authentication exists but authorization, identity verification levels, or group management are missing or informal.",
+            "non-compliant": "No cyber security, authentication, or authorization services are implemented."
+          },
+          "improvementAction": "Implement cyber security measures alongside user authentication, identity/access management, and role-based authorization."
+        },
+        {
+          "id": "gorc-st-helpdesk",
+          "title": "Helpdesk service",
+          "text": "The commons provides a helpdesk service to receive user questions and requests and connect them with the appropriate internal personnel for a response.",
+          "criteria": {
+            "compliant": "A helpdesk service exists and reliably connects user questions/requests with the appropriate internal personnel.",
+            "progress": "Users can reach the commons informally (e.g. via email) but there is no dedicated, documented helpdesk service.",
+            "non-compliant": "No mechanism exists for users to submit questions or requests to the commons."
+          },
+          "improvementAction": "Establish a dedicated helpdesk service that routes user questions and requests to the appropriate personnel."
+        }
+      ]
+    },
+    {
+      "section": "Research Objects",
+      "sourceUrl": "https://doi.org/10.15497/RDA00119",
+      "principles": [
+        {
+          "id": "gorc-ro-accessibility",
+          "title": "User-facing accessibility and reusability",
+          "text": "The commons considers the displayed, user-facing accessibility and reusability of research objects held by and discoverable through it — beyond any research-object-level standards and quality-assurance checks applied at acquisition.",
+          "criteria": {
+            "compliant": "User-facing accessibility and reusability of research objects is actively considered and tested, separate from acquisition-time quality checks.",
+            "progress": "Acquisition-time quality checks exist but user-facing accessibility/reusability is not separately considered.",
+            "non-compliant": "No consideration is given to the user-facing accessibility or reusability of research objects."
+          },
+          "improvementAction": "Assess and improve the user-facing accessibility and reusability of research objects, independent of acquisition-time quality checks."
+        },
+        {
+          "id": "gorc-ro-publications",
+          "title": "Publications and research documentation",
+          "text": "The commons supports publications and research documentation — any digital, textual, visual, audio, or tactile representation describing or discussing an aspect of the research project and activities, in human- or machine-readable formats — as a category of research object.",
+          "criteria": {
+            "compliant": "Publications and research documentation are supported as a defined research object category with appropriate repository and metadata support.",
+            "progress": "Publications are held informally without being treated as a defined, supported research object category.",
+            "non-compliant": "The commons does not support publications or research documentation as research objects."
+          },
+          "improvementAction": "Define publications and research documentation as a supported research object category with appropriate repository and metadata support."
+        },
+        {
+          "id": "gorc-ro-data",
+          "title": "Research data",
+          "text": "The commons supports research data — an identifiable collection of data with the potential to be curated or published, representing observations, processed data products, model outputs, or experimental outcomes — as a category of research object.",
+          "criteria": {
+            "compliant": "Research data is supported as a defined research object category with appropriate repository and metadata support.",
+            "progress": "Research data is held informally without being treated as a defined, supported research object category.",
+            "non-compliant": "The commons does not support research data as a research object."
+          },
+          "improvementAction": "Define research data as a supported research object category with appropriate repository and metadata support."
+        },
+        {
+          "id": "gorc-ro-software",
+          "title": "Research software",
+          "text": "The commons supports research software — any software component created during the research process or for a research purpose, implementable or executable by a computer — as a category of research object, distinct from software merely used but not created for research.",
+          "criteria": {
+            "compliant": "Research software is supported as a defined research object category with appropriate repository and metadata support.",
+            "progress": "Research software is held informally without being treated as a defined, supported research object category.",
+            "non-compliant": "The commons does not support research software as a research object."
+          },
+          "improvementAction": "Define research software as a supported research object category with appropriate repository and metadata support."
+        },
+        {
+          "id": "gorc-ro-semantic",
+          "title": "Semantic objects",
+          "text": "The commons supports semantic objects (or artefacts) — named groupings of descriptive elements, such as linked subjects, predicates, and objects with unique identifiers, that sufficiently describe a distinct identity — as a category of research object, distinct from collections.",
+          "criteria": {
+            "compliant": "Semantic objects/artefacts are supported as a defined research object category with appropriate repository and metadata support.",
+            "progress": "Semantic objects exist informally without being treated as a defined, supported research object category.",
+            "non-compliant": "The commons does not support semantic objects/artefacts as a research object category."
+          },
+          "improvementAction": "Define semantic objects/artefacts as a supported research object category with appropriate repository and metadata support."
+        },
+        {
+          "id": "gorc-ro-collections",
+          "title": "Collections",
+          "text": "The commons supports collections — combinations or bundles of research objects of the same or different kinds that share a relationship and are treated as a digital object, likely bearing a PID and consisting of a finite number of referenced digital object identifiers with associated metadata.",
+          "criteria": {
+            "compliant": "Collections are supported as a defined research object category, PID-bearing, with metadata associated to each referenced identifier.",
+            "progress": "Collections exist informally without a defined PID or associated metadata structure.",
+            "non-compliant": "The commons does not support collections as a research object category."
+          },
+          "improvementAction": "Define collections as a supported research object category, assigning PIDs and associated metadata to each."
+        }
+      ]
+    }
+  ]
+}

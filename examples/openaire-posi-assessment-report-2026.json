@@ -1,0 +1,170 @@
+{
+  "name": "OpenAIRE",
+  "description": "A community-based non-profit infrastructure providing open scholarly communication services across the research lifecycle, supporting a common European e-science environment.",
+  "url": "https://www.openaire.eu/",
+  "assessedOn": "2026-01-01",
+  "activities": [],
+  "customFrameworks": [],
+  "frameworks": {
+    "posi": {
+      "coverage": {
+        "status": "compliant",
+        "notes": "The OpenAIRE portfolio offers services for research lifecycle activities across countries, disciplines, and research actors — researchers, research performing organisations, policy-makers, publishers, funders, research communities, innovators, and infrastructures."
+      },
+      "stakeholder-governed": {
+        "status": "compliant",
+        "notes": "OpenAIRE is governed by an elected Executive Board and General Assembly, built on contributions and open discussions among member organisations."
+      },
+      "non-discriminatory": {
+        "status": "compliant",
+        "notes": "Membership is open to organisations or associations that commit to Open Science and align with the OpenAIRE mission; National Open Access Desks (NOADs) take part as Regular Members."
+      },
+      "transparent-governance": {
+        "status": "progress",
+        "notes": "OpenAIRE is a Non-Profit Partnership (NPP) incorporated under Greek law; beyond this legal-status disclosure, governance-specific transparency detail is limited on the published assessment."
+      },
+      "cannot-lobby": {
+        "status": "compliant",
+        "notes": "OpenAIRE is a community-based non-profit with a mandate to push for Open Science, but does not lobby for its own infrastructure, following an inclusive approach that promotes any service or infrastructure supporting open science."
+      },
+      "living-will": {
+        "status": "compliant",
+        "notes": "OpenAIRE AMKE owns all software, data and services, which are all open; operation and maintenance can be split among member organisations and companies, and all necessary knowledge can be transferred at any time."
+      },
+      "regular-review": {
+        "status": "compliant",
+        "notes": "OpenAIRE has a statutory duration of twenty years within which it must complete its mission (art. 23) and wind down (art. 24) — a legally binding provision forcing periodic reassessment of its continued necessity."
+      },
+      "transparent-operations": {
+        "status": "progress",
+        "notes": "“Partially implemented. OpenAIRE publishes its governance documents, policies and procedures openly, including its services sustainability models (subscriptions, free usage) and roadmaps.”"
+      },
+      "time-limited-funds": {
+        "status": "progress",
+        "notes": "OpenAIRE's main activities are still funded largely through third-party funding; it recognises the need to diversify income and has introduced hybrid financial models, including subscription plans for OpenAIRE CONNECT, MONITOR, and ARGOS."
+      },
+      "generate-surplus": {
+        "status": "compliant",
+        "notes": "OpenAIRE has an operational goal to develop a surplus of around 5–10% of its total revenue per year for the next five years."
+      },
+      "financial-reserves": {
+        "status": "compliant",
+        "notes": "OpenAIRE ensures that at any point in time it has reserves for three years of operation."
+      },
+      "mission-consistent-revenue": {
+        "status": "compliant",
+        "notes": "Revenue sources cover development of new features and services (funded by public or private open-science funders), administrative costs (by members), and service provision (by customers deploying open science services)."
+      },
+      "revenue-not-data": {
+        "status": "compliant",
+        "notes": "OpenAIRE fully aligns with this principle by ensuring all underlying data used in its services remains openly accessible and treated as community-owned, with exceptions where privacy/GDPR is concerned."
+      },
+      "volunteer-labour": {
+        "status": null,
+        "notes": "Not directly addressed in OpenAIRE's published v2 self-assessment."
+      },
+      "transition-planning": {
+        "status": "compliant",
+        "notes": "OpenAIRE acknowledges that reliance on individuals imposes risk, and has governance structures, committees and working groups in place to reduce single-point dependencies."
+      },
+      "open-source": {
+        "status": "compliant",
+        "notes": "The software powering OpenAIRE services results from the integration of open-source software solutions and is made available online via open software repositories."
+      },
+      "open-secure-data": {
+        "status": "compliant",
+        "notes": "All OpenAIRE-generated data is published as CC-BY or CC0, depending on the service and underlying data licensing dependencies."
+      },
+      "available-preserved": {
+        "status": "compliant",
+        "notes": "OpenAIRE-generated data is published via regular data dumps on Zenodo.org and via open REST APIs."
+      },
+      "patent-non-assertion": {
+        "status": "compliant",
+        "notes": "OpenAIRE's technical roadmap is committed to a patent non-assertion covenant policy."
+      },
+      "interoperability-standards": {
+        "status": "compliant",
+        "notes": "OpenAIRE uses open standards and supports interoperability (APIs, metadata standards, integrated OpenAIRE services), aligning with this principle."
+      }
+    },
+    "spii": {
+      "spii-governance": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-operations": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-provenance": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-economical": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-strategical": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-accessibility": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-stakeholder-governed": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-discipline-specific": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-digital-sovereignty": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-responsibility": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-financial-sustainability": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-human-capacity": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-legal-compliance": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-enduring-availability": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-technical-interoperability": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-organisational-interoperability": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-legal-interoperability": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-seamless-ux": {
+        "status": null,
+        "notes": ""
+      },
+      "spii-recognition-rewards": {
+        "status": null,
+        "notes": ""
+      }
+    }
+  }
+}

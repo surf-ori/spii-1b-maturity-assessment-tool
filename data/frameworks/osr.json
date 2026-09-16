@@ -1,0 +1,315 @@
+{
+  "id": "osr",
+  "title": "OSR v0.1 Assessment",
+  "shortName": "OSR",
+  "description": "A draft framework (v0.1) adapting Jeroen Bosman and Jeroen Sondervan's open science resilience model — five areas of concern (funding, infrastructure, academic freedom, safety, disinformation), each scored across five resilience types: prevention, protection, resistance, withstanding, and repair.",
+  "aboutHtml": "<p>OSR (version 0.1) is an independent, draft adaptation of the resilience model described by Jeroen Bosman and Jeroen Sondervan in <em>“The Resilience of Open Science in Times of Crisis”</em> (Upstream, FORCE11, 13 May 2025). That post identifies five major areas of concern for open science — funding, research infrastructure, academic freedom, safety of academic community members, and disinformation/science scepticism — and proposes a resilience model discerning five types of threat or incursion, ranging from a potential threat to actual destruction, matched by five types of resilience: prevention, protection, resistance, withstanding, and repair. The authors note that “a similar multi-level and multi-phase approach to resilience has been detailed” in the International Science Council’s 2024 whitepaper <em>“Protecting Science in Times of Crisis”</em>.</p><p>This is not an official assessment instrument published by the original authors, FORCE11, or the International Science Council — it is this tool’s own attempt to turn their analysis into something an Open Science infrastructure can score itself against: each of the five areas of concern is broken into five principles, one per resilience type. As a v0.1 draft, the principles and criteria are likely to change.</p><p>Cite the source work as: Bosman, J. &amp; Sondervan, J. (2025), <em>The Resilience of Open Science in Times of Crisis</em>, Upstream (FORCE11), <a href=\"https://upstream.force11.org/the-resilience-of-open-science-in-times-of-crisis/\">upstream.force11.org</a>, <a href=\"https://doi.org/10.54900/pqrcx-8d019\">https://doi.org/10.54900/pqrcx-8d019</a> — also covered by <a href=\"https://www.openscience.nl/en/cases/the-resilience-of-open-science-in-times-of-crisis\">Open Science NL</a>. Related: International Science Council, <em>Protecting Science in Times of Crisis</em> (2024), <a href=\"https://doi.org/10.24948/2024.01\">https://doi.org/10.24948/2024.01</a>.</p>",
+  "draft": true,
+  "sections": [
+    {
+      "section": "Funding Resilience",
+      "sourceUrl": "https://upstream.force11.org/the-resilience-of-open-science-in-times-of-crisis/",
+      "principles": [
+        {
+          "id": "osr-funding-prevention",
+          "title": "Diversified funding & a social contract with funders",
+          "text": "Prevention: the infrastructure reduces the likelihood of a funding attack by diversifying its funding base and maintaining long-term, trust-based relationships with funders and the public it serves.",
+          "criteria": {
+            "compliant": "Funding is diversified across multiple funders, sectors and jurisdictions, underpinned by long-term agreements, and the infrastructure proactively communicates its public value to retain trust and support.",
+            "progress": "Some diversification or long-term agreements exist, but the infrastructure remains reliant on one or two dominant funders with little proactive communication of its value.",
+            "non-compliant": "Funding depends on a single funder or short-term grants, with no long-term agreements and no active effort to build public or funder trust."
+          },
+          "improvementAction": "Diversify funders across sectors and jurisdictions, negotiate longer-term funding commitments, and proactively communicate the infrastructure’s public value."
+        },
+        {
+          "id": "osr-funding-protection",
+          "title": "Reserves & flexible funding safeguards",
+          "text": "Protection: when a funding threat materialises, financial reserves or pre-arranged safeguards can be activated before core operations are affected.",
+          "criteria": {
+            "compliant": "Reserves or pre-arranged flexible funding safeguards — such as solidarity funds or emergency schemes — exist and could be activated quickly to protect core operations.",
+            "progress": "Some reserves exist, but they are not sized or arranged to meaningfully protect operations from a real funding threat.",
+            "non-compliant": "No reserves or safeguards exist to protect operations if a funding threat materialises."
+          },
+          "improvementAction": "Establish a reserve policy and identify flexible or solidarity funding mechanisms that could be activated on short notice."
+        },
+        {
+          "id": "osr-funding-resistance",
+          "title": "Coordinated, public opposition to funding cuts",
+          "text": "Resistance: when funding is actually cut or withheld, the infrastructure and its community push back visibly and collectively rather than complying quietly.",
+          "criteria": {
+            "compliant": "The infrastructure has, or is prepared to, join coordinated public statements, legal action, or sector-wide advocacy — individually or via alliances — to contest unjustified funding cuts.",
+            "progress": "The infrastructure would consider speaking out, but has no established alliance, legal support, or advocacy channel to do so effectively.",
+            "non-compliant": "The infrastructure has no way, and no intention, to publicly contest or resist unjustified funding cuts."
+          },
+          "improvementAction": "Join or help form a sector alliance for coordinated advocacy, and identify legal support options before they are needed."
+        },
+        {
+          "id": "osr-funding-withstanding",
+          "title": "Low-cost continuity & mutual coverage",
+          "text": "Withstanding: core activities can continue at reduced cost, or be temporarily covered by peer organisations, while a funding gap persists.",
+          "criteria": {
+            "compliant": "The infrastructure can shift to lower-cost operating models — such as open-source tooling or community support — or has arrangements with peer organisations to cover critical functions during a funding gap.",
+            "progress": "Lower-cost fallback options exist informally, but have not been planned or agreed with any peer organisation.",
+            "non-compliant": "A funding gap of any length would force the infrastructure to stop core activities, with no fallback plan."
+          },
+          "improvementAction": "Identify a lower-cost operating mode and agree mutual-coverage arrangements with peer infrastructures for critical functions."
+        },
+        {
+          "id": "osr-funding-repair",
+          "title": "Recovery & support for people after a funding shock",
+          "text": "Repair: after a funding shock has caused real damage — lost staff, paused services, lost expertise — the infrastructure has a way to recover and to support the people affected.",
+          "criteria": {
+            "compliant": "A documented recovery plan restores services and staffing after a funding shock, including support — references, transition help, recognition — for people who lost roles or funding.",
+            "progress": "Recovery happens informally and support for affected people is ad hoc, without a documented plan.",
+            "non-compliant": "No recovery plan exists, and people affected by a funding shock receive no organised support."
+          },
+          "improvementAction": "Document a post-shock recovery plan, and identify ways to support affected staff and contributors, such as references, transition assistance, or connections to open positions elsewhere."
+        }
+      ]
+    },
+    {
+      "section": "Infrastructure Resilience",
+      "sourceUrl": "https://upstream.force11.org/the-resilience-of-open-science-in-times-of-crisis/",
+      "principles": [
+        {
+          "id": "osr-infra-prevention",
+          "title": "Redundancy by design: mirrors, open source & alternatives",
+          "text": "Prevention: mirrors, copies, open-source code, or comparable alternative systems already exist before any single point of failure is actually threatened.",
+          "criteria": {
+            "compliant": "The infrastructure’s code and data are open source or openly licensed, actively mirrored by at least one independent party, and comparable alternative systems are known to exist.",
+            "progress": "Code or data is open, but no independent mirror exists and no comparable alternative has been identified.",
+            "non-compliant": "Code and data are closed or single-sourced, with no mirror, no independent copy, and no known alternative."
+          },
+          "improvementAction": "Publish code and data under open licences, and actively support or seek out an independent mirror before a threat materialises."
+        },
+        {
+          "id": "osr-infra-protection",
+          "title": "Monitoring & digital sovereignty",
+          "text": "Protection: the infrastructure actively monitors for threats to its own or dependent services, and limits its dependence on infrastructure or platforms it does not control.",
+          "criteria": {
+            "compliant": "The infrastructure monitors the status of critical dependencies, applies basic technical protections such as multi-factor authentication, and has assessed and reduced dependence on single-jurisdiction or single-vendor platforms.",
+            "progress": "Some monitoring or protective measures exist, but dependence on a single jurisdiction or vendor for critical infrastructure has not been assessed.",
+            "non-compliant": "No monitoring of critical dependencies exists, and the infrastructure has not assessed its dependence on any single jurisdiction or vendor."
+          },
+          "improvementAction": "Set up monitoring for critical dependencies, apply basic technical safeguards such as multi-factor authentication, and assess dependence on single-jurisdiction or single-vendor infrastructure."
+        },
+        {
+          "id": "osr-infra-resistance",
+          "title": "Reducing single-jurisdiction & big-tech dependence",
+          "text": "Resistance: the infrastructure actively works to reduce reliance on infrastructure controlled by a single government or a small number of dominant commercial providers.",
+          "criteria": {
+            "compliant": "A documented plan exists, and is being executed, to reduce dependence on single-jurisdiction or dominant commercial platforms — for example by adopting federated or open-source alternatives.",
+            "progress": "Dependence on single-jurisdiction or dominant commercial platforms is recognised, but no plan exists to reduce it.",
+            "non-compliant": "The infrastructure is fully dependent on single-jurisdiction or dominant commercial platforms, with no awareness of or plan to reduce this."
+          },
+          "improvementAction": "Assess dependence on single-jurisdiction or dominant commercial infrastructure, and adopt federated or open-source alternatives where they exist."
+        },
+        {
+          "id": "osr-infra-withstanding",
+          "title": "Data rescue & continuity of access",
+          "text": "Withstanding: if a dependency is compromised, downsized or removed, the infrastructure or its community can keep data and services accessible through rescued copies or interim arrangements.",
+          "criteria": {
+            "compliant": "The infrastructure participates in, or could quickly participate in, data-rescue efforts — such as depositing copies in independent repositories — and has identified interim arrangements to keep services accessible if a dependency is lost.",
+            "progress": "The infrastructure is aware of data-rescue efforts and independent repositories, but has not deposited copies or arranged interim access.",
+            "non-compliant": "No copies exist outside the primary dependency, and no interim arrangement exists to keep services accessible if it is lost."
+          },
+          "improvementAction": "Deposit copies of critical data and content in independent, non-government-affiliated repositories, and identify interim access arrangements in advance."
+        },
+        {
+          "id": "osr-infra-repair",
+          "title": "Rebuilding lost infrastructure & alternative funding",
+          "text": "Repair: if a dependency is actually lost, the infrastructure — alone or with others — can rebuild the lost function and find alternative funding to sustain it.",
+          "criteria": {
+            "compliant": "A documented plan exists for rebuilding or replacing lost infrastructure functions, such as maintaining an independent copy of a critical resource, including identified alternative funding routes such as crowdsourcing, donations, or partner institutions.",
+            "progress": "Rebuilding would be attempted informally if needed, but no plan or alternative funding route has been identified in advance.",
+            "non-compliant": "No plan exists to rebuild a lost infrastructure function, and no alternative funding route has been identified."
+          },
+          "improvementAction": "Identify what it would take to rebuild or replace each critical dependency, and line up alternative funding routes — crowdsourcing, donations, partner institutions — in advance."
+        }
+      ]
+    },
+    {
+      "section": "Academic Freedom Resilience",
+      "sourceUrl": "https://upstream.force11.org/the-resilience-of-open-science-in-times-of-crisis/",
+      "principles": [
+        {
+          "id": "osr-freedom-prevention",
+          "title": "Governance safeguards against political interference",
+          "text": "Prevention: governance and funding agreements are structured so that no single government or funder can dictate editorial, curation, or research-scope decisions.",
+          "criteria": {
+            "compliant": "Governance is stakeholder-led, and funding agreements explicitly exclude conditions that would let any single funder or government dictate editorial, curation, or research-scope decisions.",
+            "progress": "Governance is broadly independent, but some funding agreements carry conditions that could constrain editorial or curation decisions.",
+            "non-compliant": "Editorial, curation, or research-scope decisions can be directly dictated by a single funder or government through funding conditions."
+          },
+          "improvementAction": "Review funding agreements for clauses that could compromise editorial or research independence, and adopt stakeholder-led governance safeguards."
+        },
+        {
+          "id": "osr-freedom-protection",
+          "title": "Editorial independence & documented policies",
+          "text": "Protection: documented editorial-independence policies and internal safeguards make it harder for external pressure to change what is published, curated, or researched.",
+          "criteria": {
+            "compliant": "A published editorial-independence policy exists, along with internal safeguards — such as a clear escalation path — for staff facing pressure over content or research topics.",
+            "progress": "Editorial independence is respected informally, but no documented policy or escalation path exists.",
+            "non-compliant": "No editorial-independence policy exists, and staff would have no clear process if pressured over content or research topics."
+          },
+          "improvementAction": "Publish an editorial-independence policy, along with guidance and an escalation path for staff facing outside pressure over content or topics."
+        },
+        {
+          "id": "osr-freedom-resistance",
+          "title": "Public stance, legal action & sector solidarity",
+          "text": "Resistance: when academic freedom is actually intruded upon, the infrastructure calls it out publicly, seeks legal advice where needed, and acts in solidarity with affected peers.",
+          "criteria": {
+            "compliant": "The infrastructure has, or is prepared to, publicly name intrusions on academic freedom, obtain legal advice, and join sector-wide solidarity statements or actions — for example alongside scholarly societies or editor communities.",
+            "progress": "The infrastructure would want to respond, but has no established channel for public statements, legal advice, or sector solidarity.",
+            "non-compliant": "The infrastructure has no way, and no intention, to publicly resist intrusions on academic freedom."
+          },
+          "improvementAction": "Establish a channel for public statements on academic-freedom intrusions, identify legal advice in advance, and join relevant solidarity networks."
+        },
+        {
+          "id": "osr-freedom-withstanding",
+          "title": "Continuing work despite restrictions",
+          "text": "Withstanding: when specific topics, terms, or collaborations are restricted, contributors and staff can keep working through legitimate alternative channels rather than simply stopping.",
+          "criteria": {
+            "compliant": "Alternative channels — different funding sources, jurisdictions, or publication venues — are identified, so restricted work can continue elsewhere rather than being abandoned.",
+            "progress": "Some awareness exists of alternative channels, but none have been arranged or tested.",
+            "non-compliant": "Restricted work would simply stop, with no alternative channel identified."
+          },
+          "improvementAction": "Map out alternative funding sources, jurisdictions, or venues that could allow restricted work to continue elsewhere."
+        },
+        {
+          "id": "osr-freedom-repair",
+          "title": "Restoring restricted work & reputational repair",
+          "text": "Repair: after content, funding, or a person’s standing has been unjustly restricted or damaged, the infrastructure has a way to restore it and set the record straight.",
+          "criteria": {
+            "compliant": "A documented process restores wrongly restricted content or funding recommendations and addresses reputational damage, including public correction of any false pretext used to justify the restriction.",
+            "progress": "Restoration happens informally, without a documented process or public correction.",
+            "non-compliant": "No process exists to restore restricted content or correct reputational damage after the fact."
+          },
+          "improvementAction": "Document a restoration and correction process, including a commitment to publicly set the record straight when a restriction is later shown to be unjustified."
+        }
+      ]
+    },
+    {
+      "section": "Safety & Wellbeing Resilience",
+      "sourceUrl": "https://upstream.force11.org/the-resilience-of-open-science-in-times-of-crisis/",
+      "principles": [
+        {
+          "id": "osr-safety-prevention",
+          "title": "Risk awareness & preparation before travel or exposure",
+          "text": "Prevention: the infrastructure identifies which community members, contributors, or staff face elevated personal risk, and prepares guidance before they are exposed to it.",
+          "criteria": {
+            "compliant": "A documented risk assessment identifies community members, staff and contributors at elevated risk — due to travel, visibility, or topic — with preventive guidance prepared and shared in advance, such as guidance for travel or border crossings.",
+            "progress": "Awareness of risk exists informally, but no documented assessment or advance guidance exists.",
+            "non-compliant": "No consideration is given to personal risk faced by contributors, staff or users."
+          },
+          "improvementAction": "Run a risk assessment covering community members, staff and contributors, and prepare and share safety guidance in advance — for example for travel, border crossings, or handling sensitive devices and data."
+        },
+        {
+          "id": "osr-safety-protection",
+          "title": "Privacy & data safety",
+          "text": "Protection: practical measures help members of the academic community protect their privacy and data — for example when travelling, or when their devices might be inspected.",
+          "criteria": {
+            "compliant": "Practical privacy and data-safety guidance — such as minimising sensitive data on devices before travel, or secure communication options — is available and actively promoted to community members, staff and contributors.",
+            "progress": "Some privacy or data-safety guidance exists, but is not actively promoted or kept up to date.",
+            "non-compliant": "No privacy or data-safety guidance is available to community members, staff or contributors."
+          },
+          "improvementAction": "Publish and promote practical privacy and data-safety guidance, covering situations such as travel and device inspection at borders."
+        },
+        {
+          "id": "osr-safety-resistance",
+          "title": "Legal support & public solidarity",
+          "text": "Resistance: when a community member’s safety or status is actually threatened, legal support and visible solidarity are available rather than silence.",
+          "criteria": {
+            "compliant": "Access to legal support and a process for organising public solidarity — statements, shows of support — are available and known to community members, staff and contributors facing a safety threat.",
+            "progress": "Legal support or solidarity actions have happened informally, but no established access or process exists.",
+            "non-compliant": "No legal support or solidarity process exists for community members facing a safety threat."
+          },
+          "improvementAction": "Establish access to legal support and a process for organising visible solidarity for affected community members, staff and contributors."
+        },
+        {
+          "id": "osr-safety-withstanding",
+          "title": "Remote & flexible participation instead of unsafe travel",
+          "text": "Withstanding: when travel or physical presence becomes unsafe, remote and flexible participation options let people continue contributing without exposure to risk.",
+          "criteria": {
+            "compliant": "Remote or virtual participation is a genuine, well-supported option for meetings, conferences, and collaboration, so people at risk are not forced to choose between contributing and travelling unsafely.",
+            "progress": "Remote participation is technically possible, but not well-supported or actively offered as an alternative to unsafe travel.",
+            "non-compliant": "Participation effectively requires physical travel, with no supported remote alternative."
+          },
+          "improvementAction": "Build and actively offer well-supported remote or virtual participation options, particularly for events or collaborations that would otherwise require unsafe travel."
+        },
+        {
+          "id": "osr-safety-repair",
+          "title": "Offering safety & opportunity to affected people",
+          "text": "Repair: when someone has been harmed, displaced, or lost their position because of a threat, the infrastructure can offer, or connect them with, a safe way to continue their work.",
+          "criteria": {
+            "compliant": "The infrastructure can offer, or has established links to programmes that offer, roles, hosting, or other concrete support to people who have lost their position or safety because of a threat.",
+            "progress": "The infrastructure would want to help, but has no established roles, capacity, or links to relevant support programmes.",
+            "non-compliant": "No support, roles, or links to relevant programmes exist for people affected by a safety threat."
+          },
+          "improvementAction": "Identify roles, hosting capacity, or links to at-risk and displaced-researcher support programmes that could offer a safe way for affected people to continue their work."
+        }
+      ]
+    },
+    {
+      "section": "Disinformation & Trust Resilience",
+      "sourceUrl": "https://upstream.force11.org/the-resilience-of-open-science-in-times-of-crisis/",
+      "principles": [
+        {
+          "id": "osr-trust-prevention",
+          "title": "Provenance & platforms that don’t amplify disinformation",
+          "text": "Prevention: the infrastructure’s outputs are verifiable by design, and it avoids or limits use of platforms whose algorithms amplify disinformation.",
+          "criteria": {
+            "compliant": "Provenance and source information for data and content is tracked and exposed, and the infrastructure avoids or limits reliance on platforms known to algorithmically amplify disinformation for its own communication.",
+            "progress": "Some provenance tracking exists, but the infrastructure still relies significantly on platforms known to amplify disinformation.",
+            "non-compliant": "No provenance tracking exists, and the infrastructure relies fully on platforms known to amplify disinformation with no consideration of alternatives."
+          },
+          "improvementAction": "Track and expose provenance for data and content, and consider platforms without strong disinformation-amplifying algorithms for the infrastructure’s own communication."
+        },
+        {
+          "id": "osr-trust-protection",
+          "title": "Engagement with policymakers & the public",
+          "text": "Protection: ongoing contact with policymakers and clear public communication about the infrastructure’s value help protect it from being misrepresented or discredited.",
+          "criteria": {
+            "compliant": "The infrastructure maintains active contact with relevant policymakers or representatives, and communicates its value and integrity clearly and proactively to the public.",
+            "progress": "Some public communication happens, but there is little to no active contact with policymakers or representatives.",
+            "non-compliant": "No active public communication or policymaker contact exists to protect the infrastructure’s reputation."
+          },
+          "improvementAction": "Establish regular contact with relevant policymakers or representatives, and proactively communicate the infrastructure’s value and integrity to the public."
+        },
+        {
+          "id": "osr-trust-resistance",
+          "title": "Calling out disinformation & targeted attacks",
+          "text": "Resistance: when the infrastructure, its data, or its people are targeted by disinformation, it responds publicly and factually rather than staying silent.",
+          "criteria": {
+            "compliant": "A documented process exists for responding publicly and factually to disinformation or credibility attacks, including specific support for individuals or groups most often targeted, such as women, people of colour, or LGBTQ+ community members.",
+            "progress": "Responses to disinformation happen informally and without particular attention to groups most often targeted.",
+            "non-compliant": "No process exists to respond to disinformation or credibility attacks, and no attention is given to groups most often targeted."
+          },
+          "improvementAction": "Document a rapid, factual response process for disinformation and credibility attacks, with specific support for the individuals or groups most often targeted."
+        },
+        {
+          "id": "osr-trust-withstanding",
+          "title": "Retaining community trust under sustained pressure",
+          "text": "Withstanding: under sustained disinformation or scepticism, the infrastructure retains the trust and continued participation of its community.",
+          "criteria": {
+            "compliant": "The infrastructure actively monitors community trust and engagement, and has measures in place — transparency, direct community communication — that have kept trust and participation stable under past pressure.",
+            "progress": "Trust and engagement are not actively monitored, so it is unclear whether the infrastructure could retain them under sustained pressure.",
+            "non-compliant": "No measures exist to retain community trust or participation under sustained disinformation or scepticism."
+          },
+          "improvementAction": "Monitor community trust and engagement, and use transparent, direct communication to sustain it under pressure."
+        },
+        {
+          "id": "osr-trust-repair",
+          "title": "Restoring trust & reputation after an attack",
+          "text": "Repair: after a disinformation campaign or credibility attack has caused real reputational damage, the infrastructure actively works to restore trust rather than waiting for it to fade.",
+          "criteria": {
+            "compliant": "A documented post-incident plan for restoring trust and reputation — such as transparency reporting and renewed public engagement — exists and has been used, or is ready to be used, after an attack.",
+            "progress": "Some informal effort is made to restore trust after an attack, without a documented plan.",
+            "non-compliant": "No deliberate effort is made to restore trust or reputation after a disinformation campaign or credibility attack."
+          },
+          "improvementAction": "Prepare a trust-restoration plan — transparency reporting plus renewed public engagement — ready to use after any disinformation campaign or credibility attack."
+        }
+      ]
+    }
+  ]
+}

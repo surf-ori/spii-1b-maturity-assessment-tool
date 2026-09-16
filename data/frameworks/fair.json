@@ -1,0 +1,199 @@
+{
+  "id": "fair",
+  "title": "FAIR Principles Assessment",
+  "shortName": "FAIR",
+  "description": "A draft framework transcribing the FAIR Guiding Principles (Wilkinson et al., 2016; GO FAIR Foundation) — fifteen sub-principles across Findable, Accessible, Interoperable, and Reusable, for assessing how well data, metadata, and the infrastructure serving them support machine- and human-actionable discovery and reuse.",
+  "aboutHtml": "<p>The <a href=\"https://www.go-fair.org/fair-principles/\">FAIR Guiding Principles</a> for scientific data management and stewardship set out how to make data and metadata Findable, Accessible, Interoperable, and Reusable — by both humans and machines. They were first published as Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. “The FAIR Guiding Principles for scientific data management and stewardship.” <i>Sci Data</i> 3, 160018 (2016). <a href=\"https://doi.org/10.1038/sdata.2016.18\">https://doi.org/10.1038/sdata.2016.18</a>, and are maintained and published today by the <a href=\"https://www.gofair.foundation/fair-principles\">GO FAIR Foundation</a>.</p><p>This tool's <code>fair</code> framework transcribes the fifteen FAIR sub-principles (F1–F4, A1/A1.1/A1.2/A2, I1–I3, R1/R1.1–R1.3) verbatim as each principle's <code>text</code>, taken from the GO FAIR Foundation's own published wording and cross-checked against the machine-actionable <a href=\"https://w3id.org/fair/principles/terms/FAIR\">FAIR Vocabulary</a> ontology (Tobias Kuhn and Michel Dumontier, CC BY 4.0), which defines the same fifteen sub-principles as its own <code>FAIR-SubPrinciple</code> individuals. The four sections (Findable, Accessible, Interoperable, Reusable) correspond to the ontology's top-level <code>FAIR-Principle</code> individuals (F, A, I, R). Only the <code>criteria</code> (compliant/progress/non-compliant) and <code>improvementAction</code> fields are this tool's own addition: the FAIR principles themselves describe essential aspects of good data stewardship without prescribing a pass/fail scoring mechanism, so these are one reasonable operationalisation of them for a self-assessment, not an official rubric endorsed by GO FAIR or the original authors.</p>",
+  "draft": true,
+  "sections": [
+    {
+      "section": "Findable",
+      "sourceUrl": "https://doi.org/10.1038/sdata.2016.18",
+      "principles": [
+        {
+          "id": "fair-f1",
+          "title": "F1: Globally unique and persistent identifiers",
+          "text": "(meta)data are assigned a globally unique and persistent identifier",
+          "criteria": {
+            "compliant": "Every dataset and its metadata are assigned a globally unique, persistent identifier (e.g. DOI, Handle, ARK) that resolves reliably over time.",
+            "progress": "Identifiers are used for some but not all datasets, or the identifiers used are not globally unique or not guaranteed persistent (e.g. a local database key or a plain URL with no persistence commitment).",
+            "non-compliant": "Datasets and their metadata have no persistent identifier; they are referenced only by file paths or ephemeral URLs."
+          },
+          "improvementAction": "Assign a globally unique, persistent identifier (such as a DOI) to every dataset and its metadata record, using a recognised PID service."
+        },
+        {
+          "id": "fair-f2",
+          "title": "F2: Rich metadata",
+          "text": "data are described with rich metadata (defined by R1 below)",
+          "criteria": {
+            "compliant": "Data are described with rich, standardised metadata covering context, quality, provenance, and content, giving enough information to judge fitness for reuse.",
+            "progress": "Basic metadata exists (e.g. title, date, format) but lacks the richness needed to judge fitness for reuse.",
+            "non-compliant": "Data are published with little or no accompanying metadata."
+          },
+          "improvementAction": "Adopt a metadata schema that captures rich descriptive, contextual, and provenance information, and apply it consistently to every dataset."
+        },
+        {
+          "id": "fair-f3",
+          "title": "F3: Metadata explicitly include the data's identifier",
+          "text": "metadata clearly and explicitly include the identifier of the data they describe",
+          "criteria": {
+            "compliant": "Every metadata record explicitly and unambiguously references the persistent identifier of the data it describes.",
+            "progress": "Metadata records exist but do not consistently or explicitly include the data's identifier.",
+            "non-compliant": "Metadata records do not reference the identifier of the data they describe."
+          },
+          "improvementAction": "Ensure every metadata record explicitly includes the persistent identifier of the data it describes, in a machine-readable field."
+        },
+        {
+          "id": "fair-f4",
+          "title": "F4: Registered or indexed in a searchable resource",
+          "text": "(meta)data are registered or indexed in a searchable resource",
+          "criteria": {
+            "compliant": "(Meta)data are registered or indexed in a searchable resource (e.g. a disciplinary or generalist registry, catalogue, or search engine), so they can be discovered independently of the hosting system.",
+            "progress": "(Meta)data are searchable within their own repository but not indexed or registered elsewhere.",
+            "non-compliant": "(Meta)data are not indexed or registered in any searchable resource, and can only be found if the exact location is already known."
+          },
+          "improvementAction": "Register or index the (meta)data in a recognised searchable registry or catalogue relevant to the discipline or data type."
+        }
+      ]
+    },
+    {
+      "section": "Accessible",
+      "sourceUrl": "https://doi.org/10.1038/sdata.2016.18",
+      "principles": [
+        {
+          "id": "fair-a1",
+          "title": "A1: Retrievable by identifier via a standardised protocol",
+          "text": "(meta)data are retrievable by their identifier using a standardised communications protocol",
+          "criteria": {
+            "compliant": "(Meta)data can be retrieved by their identifier using a standardised, well-documented communications protocol (e.g. HTTP/HTTPS).",
+            "progress": "(Meta)data can be retrieved, but only via an ad hoc or undocumented mechanism rather than a standardised protocol.",
+            "non-compliant": "(Meta)data cannot be retrieved using their identifier at all."
+          },
+          "improvementAction": "Make (meta)data retrievable via a standardised, documented protocol such as HTTP/HTTPS, resolving directly from the identifier."
+        },
+        {
+          "id": "fair-a1-1",
+          "title": "A1.1: Protocol is open, free, and universally implementable",
+          "text": "the protocol is open, free, and universally implementable",
+          "criteria": {
+            "compliant": "The retrieval protocol is open, free to use, and universally implementable, with no proprietary or paywalled dependency.",
+            "progress": "The protocol is mostly open but has some barriers (e.g. requires a specific proprietary client, or a paid API tier for higher volumes).",
+            "non-compliant": "The retrieval protocol is proprietary, closed, or requires payment to implement or use."
+          },
+          "improvementAction": "Replace or supplement any proprietary retrieval mechanism with an open, free, universally implementable protocol."
+        },
+        {
+          "id": "fair-a1-2",
+          "title": "A1.2: Protocol supports authentication and authorisation where needed",
+          "text": "the protocol allows for an authentication and authorisation procedure, where necessary",
+          "criteria": {
+            "compliant": "Where access restrictions are necessary, the protocol supports a standard authentication and authorisation procedure; where no restriction is needed, access is open by default.",
+            "progress": "Some access control exists but is implemented outside the retrieval protocol (e.g. manual email requests) rather than through a standard mechanism.",
+            "non-compliant": "There is no mechanism for authentication or authorisation, and no way to grant appropriately restricted access where needed."
+          },
+          "improvementAction": "Implement a standard authentication/authorisation mechanism within the retrieval protocol for any data that needs restricted access."
+        },
+        {
+          "id": "fair-a2",
+          "title": "A2: Metadata remain accessible after data are gone",
+          "text": "metadata are accessible, even when the data are no longer available",
+          "criteria": {
+            "compliant": "Metadata records remain accessible even after the underlying data are no longer available (e.g. due to embargo expiry, withdrawal, or loss), documenting that the data once existed.",
+            "progress": "Metadata are usually removed or become inaccessible alongside the data, though this is not a deliberate policy.",
+            "non-compliant": "Metadata are deleted whenever the underlying data become unavailable, leaving no trace of the dataset having existed."
+          },
+          "improvementAction": "Adopt a policy and technical mechanism to preserve metadata records independently of the data's own availability."
+        }
+      ]
+    },
+    {
+      "section": "Interoperable",
+      "sourceUrl": "https://doi.org/10.1038/sdata.2016.18",
+      "principles": [
+        {
+          "id": "fair-i1",
+          "title": "I1: Formal, shared knowledge representation language",
+          "text": "(meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation",
+          "criteria": {
+            "compliant": "(Meta)data are represented using a formal, accessible, shared, and broadly applicable knowledge-representation language (e.g. RDF, or a standard structured format with a public schema).",
+            "progress": "(Meta)data use a structured format, but it is proprietary, undocumented, or not broadly shared across the community.",
+            "non-compliant": "(Meta)data are represented only as free text or in an ad hoc, undocumented structure."
+          },
+          "improvementAction": "Represent (meta)data using a formal, community-shared knowledge-representation language or a well-documented structured format."
+        },
+        {
+          "id": "fair-i2",
+          "title": "I2: FAIR-compliant vocabularies",
+          "text": "(meta)data use vocabularies that follow FAIR principles",
+          "criteria": {
+            "compliant": "(Meta)data use controlled vocabularies, ontologies, or thesauri that themselves follow FAIR principles (findable, accessible, well-documented, and reused by the community).",
+            "progress": "Some controlled vocabulary is used, but it is locally defined, undocumented, or not itself FAIR.",
+            "non-compliant": "No controlled vocabularies are used; terms are free text chosen without reference to any shared vocabulary."
+          },
+          "improvementAction": "Adopt established, FAIR-compliant controlled vocabularies or ontologies relevant to the domain, rather than free-text or locally invented terms."
+        },
+        {
+          "id": "fair-i3",
+          "title": "I3: Qualified references to other (meta)data",
+          "text": "(meta)data include qualified references to other (meta)data",
+          "criteria": {
+            "compliant": "(Meta)data include qualified references to other relevant (meta)data — links that specify the nature of the relationship (e.g. “isDerivedFrom”, “isPartOf”), not just an unqualified pointer.",
+            "progress": "(Meta)data reference other (meta)data, but the relationships are unqualified (plain links or free-text mentions with no specified relation type).",
+            "non-compliant": "(Meta)data contain no references to related (meta)data at all."
+          },
+          "improvementAction": "Add qualified, typed references between related (meta)data records, describing the nature of each relationship."
+        }
+      ]
+    },
+    {
+      "section": "Reusable",
+      "sourceUrl": "https://doi.org/10.1038/sdata.2016.18",
+      "principles": [
+        {
+          "id": "fair-r1",
+          "title": "R1: Richly described with accurate, relevant attributes",
+          "text": "meta(data) are richly described with a plurality of accurate and relevant attributes",
+          "criteria": {
+            "compliant": "Meta(data) are richly described with a plurality of accurate and relevant attributes, giving reusers enough context to understand, trust, and correctly reuse the data.",
+            "progress": "Meta(data) include some descriptive attributes, but not enough to confidently judge fitness for reuse.",
+            "non-compliant": "Meta(data) carry minimal or no descriptive attributes beyond a bare identifier or filename."
+          },
+          "improvementAction": "Enrich meta(data) with a plurality of accurate, relevant descriptive attributes (methodology, context, quality indicators, etc.)."
+        },
+        {
+          "id": "fair-r1-1",
+          "title": "R1.1: Clear and accessible usage license",
+          "text": "(meta)data are released with a clear and accessible data usage license",
+          "criteria": {
+            "compliant": "(Meta)data are released with a clear, machine-readable, and accessible data usage licence, stating what reuse is permitted.",
+            "progress": "A licence is mentioned but is unclear, not machine-readable, or hard to locate.",
+            "non-compliant": "(Meta)data carry no usage licence or rights statement at all."
+          },
+          "improvementAction": "Attach a clear, standard, machine-readable usage licence (e.g. a Creative Commons or other open licence) to every (meta)data release."
+        },
+        {
+          "id": "fair-r1-2",
+          "title": "R1.2: Detailed provenance",
+          "text": "(meta)data are associated with detailed provenance",
+          "criteria": {
+            "compliant": "(Meta)data are associated with detailed provenance information describing their origin, processing history, and the parties responsible for them.",
+            "progress": "Some provenance information exists (e.g. a creator name) but lacks detail on processing history or responsibility chain.",
+            "non-compliant": "(Meta)data carry no provenance information."
+          },
+          "improvementAction": "Document detailed provenance for (meta)data — origin, processing steps, and responsible parties — using a standard provenance model where possible."
+        },
+        {
+          "id": "fair-r1-3",
+          "title": "R1.3: Meets domain-relevant community standards",
+          "text": "(meta)data meet domain-relevant community standards",
+          "criteria": {
+            "compliant": "(Meta)data meet the domain-relevant community standards (formats, vocabularies, quality expectations) recognised by the relevant research community.",
+            "progress": "(Meta)data partially follow community standards, or follow standards from an adjacent but not the most relevant domain.",
+            "non-compliant": "(Meta)data follow no recognised domain or community standard."
+          },
+          "improvementAction": "Identify and adopt the domain-relevant community standards for (meta)data format, vocabulary, and quality in the relevant research field."
+        }
+      ]
+    }
+  ]
+}

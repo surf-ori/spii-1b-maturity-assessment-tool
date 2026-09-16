@@ -1,5 +1,9 @@
 # Agents
 
+This repo hosts both the maturity assessment tool's app code (see `CLAUDE.md` for its
+architecture) and SPII deliverable 1B's feedback tracker. The checklist below concerns the
+tracker only.
+
 Running checklist for whoever, human or agent, triages feedback on this tracker.
 
 ## Recurring

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+title: Open Science Infrastructure Self-Assessment Tool
+abstract: >-
+  A self-assessment tool for Open Science infrastructures against community
+  assessment frameworks such as the Principles of Open Scholarly
+  Infrastructure (POSI) v2.0.
+type: software
+authors:
+  - given-names: Till
+    family-names: Bey
+    affiliation: "SURF (https://ror.org/009vhk114)"
+    orcid: "https://orcid.org/0000-0001-7509-9875"
+  - given-names: Maurice
+    family-names: Vanderfeesten
+    affiliation: "Vrije Universiteit Amsterdam (https://ror.org/008xxew50); SURF (https://ror.org/009vhk114)"
+    orcid: "https://orcid.org/0000-0001-6397-4759"
+  - given-names: Sander
+    family-names: Bosch
+    affiliation: "Vrije Universiteit Amsterdam (https://ror.org/008xxew50)"
+    orcid: "https://orcid.org/0000-0001-6845-0911"
+repository-code: https://github.com/surf-ori/spii-1b-maturity-assessment-tool
+license: EUPL-1.2

@@ -1,0 +1,122 @@
+{
+  "id": "bd",
+  "title": "BD Assessment v1.0",
+  "shortName": "BD",
+  "description": "A draft framework adapting the Barcelona Declaration on Open Research Information (2024) — four commitments to making openness the default, working with open-enabling services and systems, supporting infrastructure sustainability, and coordinating collective action.",
+  "aboutHtml": "<p>The <a href=\"https://www.barcelona-declaration.org\">Barcelona Declaration on Open Research Information</a> (16 April 2024) was prepared by a group of over 25 research information experts, representing organizations that carry out, fund, and evaluate research, as well as organizations that provide research information infrastructures. It commits signatories to four things: (1) making openness of research information the default, (2) working with services and systems that support and enable open research information, (3) supporting the sustainability of infrastructures for open research information, and (4) working together to realize the transition from closed to open research information. It explicitly names the <a href=\"https://openscholarlyinfrastructure.org/\">Principles of Open Scholarly Infrastructure (POSI)</a> as the kind of good practice signatories should expect from the infrastructures they support.</p><p>This is not an official assessment instrument — the Declaration itself has no scoring mechanism. The four commitments and their eight sub-points are transcribed verbatim as each principle's text; the compliant/progress/non-compliant criteria and improvement actions are this tool's own attempt to operationalise them for an Open Science infrastructure (or the organisation behind it) to self-assess against, since the Declaration was written for signing organizations broadly rather than as a per-infrastructure rubric. As a draft, the criteria are likely to change.</p><p>Cite as: Barcelona Declaration on Open Research Information. (2024). <a href=\"https://doi.org/10.5281/zenodo.10958522\">https://doi.org/10.5281/zenodo.10958522</a>.</p>",
+  "draft": true,
+  "sections": [
+    {
+      "section": "Openness by Default",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.10958522",
+      "principles": [
+        {
+          "id": "bd-use-open",
+          "title": "Openness of the research information we use",
+          "text": "Openness will be the norm for the research information we use, for instance to assess researchers and institutions, to support strategic decision making, and to find relevant research outputs.",
+          "criteria": {
+            "compliant": "The infrastructure defaults to using openly available research information (e.g. open metadata, open citation/usage data) for its own assessments, decisions, and services, with closed sources used only as a documented exception.",
+            "progress": "Some use of open research information exists, but closed or proprietary sources (e.g. subscription databases) are still the default for key decisions or services.",
+            "non-compliant": "Research information used for assessment, decision-making, or discovery is closed by default, with no move toward open sources."
+          },
+          "improvementAction": "Audit which research information sources the infrastructure currently relies on, and set a plan to default to open sources wherever available."
+        },
+        {
+          "id": "bd-produce-open",
+          "title": "Openness of the research information we produce",
+          "text": "Openness will be the norm for the research information we produce, for instance information about our activities and outputs, with an exception for information for which openness would be inappropriate (‘as open as possible, as closed as necessary’).",
+          "criteria": {
+            "compliant": "Information the infrastructure itself produces (activities, outputs, metadata) is openly available by default, following “as open as possible, as closed as necessary”, with any closed exceptions documented and justified.",
+            "progress": "Some of the infrastructure’s own information is open, but openness is not yet the default, or exceptions are undocumented.",
+            "non-compliant": "Information produced by the infrastructure is closed by default, with no “as open as possible” policy in place."
+          },
+          "improvementAction": "Publish a default-open policy for the infrastructure’s own metadata and output information, documenting any necessary closed exceptions."
+        }
+      ]
+    },
+    {
+      "section": "Open-Enabling Services & Systems",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.10958522",
+      "principles": [
+        {
+          "id": "bd-publishing-services",
+          "title": "Publishing services and platforms",
+          "text": "For publishing services and platforms, we will require that research information generated in publication processes (e.g., metadata of research articles and other outputs) be made openly available through open scholarly infrastructures, using standard protocols and identifiers where available.",
+          "criteria": {
+            "compliant": "Any publishing services or platforms the infrastructure operates or requires of others make research information (e.g. publication metadata) openly available through open scholarly infrastructures, using standard protocols and persistent identifiers (e.g. DOIs, ORCIDs, RORs) where available.",
+            "progress": "Some publication metadata is made open or uses standard identifiers, but this is not a consistent requirement.",
+            "non-compliant": "Publishing services or platforms in use do not require open metadata or standard identifiers."
+          },
+          "improvementAction": "Require open metadata and standard persistent identifiers (DOI, ORCID, ROR) in contracts or policies for any publishing services or platforms used."
+        },
+        {
+          "id": "bd-internal-systems",
+          "title": "Internal research information systems",
+          "text": "For systems and platforms for the internal management of research information (e.g., current research information systems), we will require that all relevant research information can be exported and made open, using standard protocols and identifiers where available.",
+          "criteria": {
+            "compliant": "Internal research-information systems (e.g. a CRIS) support exporting all relevant information in open, standard formats using persistent identifiers where available, and this capability is actively used.",
+            "progress": "Export is technically possible but not standard, not using persistent identifiers, or not actually exercised.",
+            "non-compliant": "Internal systems lock research information in, with no meaningful export or open-format capability."
+          },
+          "improvementAction": "Require export-to-open capability, using standard protocols and identifiers, as a condition for any internal research-information system."
+        }
+      ]
+    },
+    {
+      "section": "Sustainability of Infrastructures",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.10958522",
+      "principles": [
+        {
+          "id": "bd-support-infra",
+          "title": "Supporting infrastructures for open research information",
+          "text": "We take responsibility for supporting infrastructures for open research information, for instance by participating in community building and community governance and by providing fair and equitable contributions to the financial stability and development of these infrastructures.",
+          "criteria": {
+            "compliant": "The infrastructure, or the organisation behind it, actively participates in community governance of, and provides fair, equitable financial contributions to, the open research-information infrastructures it depends on.",
+            "progress": "Some participation or financial contribution exists, but it is ad hoc, not equitable or proportionate, or limited to a single infrastructure.",
+            "non-compliant": "No participation in community governance and no financial contribution to supporting open research-information infrastructures."
+          },
+          "improvementAction": "Identify the open research-information infrastructures you depend on, and commit to a fair, sustained financial contribution and a role in their governance."
+        },
+        {
+          "id": "bd-expect-good-practice",
+          "title": "Expecting good practice from supported infrastructures",
+          "text": "We expect the infrastructures that we support to implement good practices for community governance and sustainability (e.g., Principles of Open Scholarly Infrastructure).",
+          "criteria": {
+            "compliant": "The infrastructure itself implements, or the organisation only supports infrastructures that implement, recognised good practices for governance and sustainability such as POSI.",
+            "progress": "Awareness of POSI or equivalent good practice exists, but it is not yet a requirement for the infrastructures supported, or the infrastructure itself only partially meets it.",
+            "non-compliant": "No expectation or requirement of good governance or sustainability practice is placed on supported infrastructures."
+          },
+          "improvementAction": "Adopt POSI, or an equivalent good-practice framework, yourself, and make it an explicit expectation of any infrastructure you support (see also the POSI framework in this tool)."
+        }
+      ]
+    },
+    {
+      "section": "Collective Action",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.10958522",
+      "principles": [
+        {
+          "id": "bd-share-coordinate",
+          "title": "Sharing experiences and coordinating action",
+          "text": "We recognize the importance of sharing experiences and coordinating action to promote a system-wide transition from closed to open research information.",
+          "criteria": {
+            "compliant": "The infrastructure actively shares experiences and coordinates action (e.g. via working groups, community forums, joint statements) with peers to advance the transition to open research information.",
+            "progress": "Some informal sharing of experience happens, but there is no active coordination with peers.",
+            "non-compliant": "No sharing of experience or coordination with peers on the transition to open research information."
+          },
+          "improvementAction": "Join, or help organise, a forum for sharing experience and coordinating action on open research information with peer organisations."
+        },
+        {
+          "id": "bd-support-coalition",
+          "title": "Supporting the Coalition for Open Research Information",
+          "text": "To facilitate this, we support establishing a Coalition for Open Research Information and strengthening collaboration with other related initiatives and organizations.",
+          "criteria": {
+            "compliant": "The infrastructure or organisation has signed the Barcelona Declaration and actively supports the Coalition for Open Research Information, or an equivalent collective initiative, including collaboration with related initiatives.",
+            "progress": "Aware of and sympathetic to the Coalition, but has not signed the Declaration or engaged with the Coalition or related initiatives.",
+            "non-compliant": "No engagement with the Coalition for Open Research Information or related collective initiatives."
+          },
+          "improvementAction": "Sign the Barcelona Declaration and engage with the Coalition for Open Research Information (see barcelona-declaration.org)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "posi",
+  "title": "POSI v2.0 Assessment",
+  "shortName": "POSI",
+  "description": "A community-maintained framework covering governance, sustainability, and insurance against lock-in for scholarly infrastructure.",
+  "aboutHtml": "<p>The Principles of Open Scholarly Infrastructure (POSI) is a community-maintained framework (v2.0, released October 2025) covering three areas: <strong>Governance</strong> (who’s accountable and how), <strong>Sustainability</strong> (financial and operational resilience), and <strong>Insurance</strong> (protection against lock-in or failure — open source, open data, patent non-assertion). Read the full principles at <a href=\"https://openscholarlyinfrastructure.org/\">openscholarlyinfrastructure.org</a>.</p><p>Cite as: POSI Adopters (2025), <em>The Principles of Open Scholarly Infrastructure</em>, <a href=\"https://doi.org/10.14454/G8WV-VM65\">https://doi.org/10.14454/G8WV-VM65</a>.</p>",
+  "sections": [
+    {
+      "section": "Governance",
+      "sourceUrl": "https://openscholarlyinfrastructure.org/#governance",
+      "principles": [
+        {
+          "id": "coverage",
+          "title": "Coverage across the scholarly enterprise",
+          "text": "Research transcends disciplines, geography, institutions, and stakeholders. Organisations and the infrastructure they run need to reflect this."
+        },
+        {
+          "id": "stakeholder-governed",
+          "title": "Stakeholder governed",
+          "text": "A board-governed organisation drawn from the stakeholder community builds confidence that the organisation will make decisions driven by community consensus and a balance of interests."
+        },
+        {
+          "id": "non-discriminatory",
+          "title": "Non-discriminatory participation or membership",
+          "text": "We see the best option to be an “opt-in” approach with principles of non-discrimination and inclusivity, where any relevant group may express an interest and should be welcome. Representation in governance must reflect the character of the community or membership."
+        },
+        {
+          "id": "transparent-governance",
+          "title": "Transparent governance",
+          "text": "To foster trust, the processes and policies for governing the organisation and selecting representatives to governance groups should be transparent (within the constraints of privacy laws)."
+        },
+        {
+          "id": "cannot-lobby",
+          "title": "Cannot lobby",
+          "text": "Infrastructure organisations should not lobby for regulatory change to cement their own positions or narrow self-interest. However, an infrastructure organisation’s role is to support its community, and this can include advocating for policy changes."
+        },
+        {
+          "id": "living-will",
+          "title": "Living will",
+          "text": "To build trust, organisations should establish and communicate clear commitments regarding their long-term stewardship responsibilities, including the principles by which assets, data, resources, services, and staff would be responsibly transferred to a successor or the organisation or service wound down. The commitments should address future governance, with defined criteria for acceptable successor organisations. This should include continued alignment with POSI and any legal or structural constraints."
+        },
+        {
+          "id": "regular-review",
+          "title": "Regular review of purpose and community value",
+          "text": "Organisations and services should regularly review their relevance, effectiveness, and the level of community support to determine whether their continued operation is necessary. If no longer needed, they should take responsible steps to transition or wind down operations in consultation with the community and in alignment with their living will."
+        }
+      ]
+    },
+    {
+      "section": "Sustainability",
+      "sourceUrl": "https://openscholarlyinfrastructure.org/#sustainability",
+      "principles": [
+        {
+          "id": "transparent-operations",
+          "title": "Transparent operations",
+          "text": "To enable organisational accountability and openness, the operating policies and procedures, detailed financials, sustainability models, fees, strategic and product roadmaps, organisational charts, and other appropriate operational information should be made openly available (within the constraints of privacy laws). Information should be available for investigation and reuse by the community."
+        },
+        {
+          "id": "time-limited-funds",
+          "title": "Time-limited funds are used only for time-limited activities",
+          "text": "Operations should be supported by sustainable revenue sources, whereas time-limited funds are used only for time-limited activities. Depending on grants to fund ongoing and/or long-term operations fully makes organisations fragile and distracts from maintaining core infrastructure."
+        },
+        {
+          "id": "generate-surplus",
+          "title": "Goal to generate surplus",
+          "text": "It is not enough to merely survive; organisations and services have to be able to adapt and change. Organisations and services that define long-term sustainability based only on recovering costs risk becoming brittle and stagnant. To weather economic, social and technological volatility, organisations and services need financial resources beyond immediate operating costs."
+        },
+        {
+          "id": "financial-reserves",
+          "title": "Establish and maintain financial reserves guided by policy",
+          "text": "Organisations and services should have a clear policy on maintaining financial reserves, including the purpose, minimum and maximum level, and governance of these funds. The actual level of reserves should be determined and periodically reviewed by the governing body, ensuring that resources are available to support Living Will implementation, including an orderly wind-down, transition to a successor, or response to major unforeseen events. A financial reserve policy might include how funds will be held, under what circumstances they will be used, and how much would be necessary for an adequate wind-down or transfer of assets, given the complexity of the organisation’s infrastructure."
+        },
+        {
+          "id": "mission-consistent-revenue",
+          "title": "Mission-consistent revenue generation",
+          "text": "Revenue sources should be evaluated against the infrastructure’s mission and not run counter to the aims of the organisation or service."
+        },
+        {
+          "id": "revenue-not-data",
+          "title": "Revenue generated from services, not data",
+          "text": "Data related to the running of the scholarly infrastructure should be community property. Appropriate revenue sources might include value-added services, consulting, API Service Level Agreements, or membership fees."
+        },
+        {
+          "id": "volunteer-labour",
+          "title": "Volunteer labour",
+          "text": "Organisations that rely on volunteers and their labour should recognise this as a valuable resource for the organisation’s long-term viability, and factor it into sustainability planning and risk management."
+        },
+        {
+          "id": "transition-planning",
+          "title": "Transition planning",
+          "text": "Organisations that are heavily dependent on a limited number of individuals should take steps to reduce their dependence on these individuals, including via transition and succession planning, so that the organisation is not at risk of collapse in the event of their departure."
+        }
+      ]
+    },
+    {
+      "section": "Insurance",
+      "sourceUrl": "https://openscholarlyinfrastructure.org/#insurance",
+      "principles": [
+        {
+          "id": "open-source",
+          "title": "Open source",
+          "text": "All software and non-physical assets required to run the infrastructure should be available under an open-source licence. This does not include other software that may be involved with running the organisation."
+        },
+        {
+          "id": "open-secure-data",
+          "title": "Ensure open and secure data accessibility within legal and ethical constraints",
+          "text": "To support potential forking or replication, infrastructure should aim to make all relevant data openly available, following best practices such as applying a CC0 waiver where appropriate. This must be balanced with compliance with privacy, data protection, and security requirements. Organisations should have a clear policy outlining how private or sensitive data will be handled—particularly in the event of a transfer to another organisation—to ensure continuity, legal compliance, and responsible stewardship."
+        },
+        {
+          "id": "available-preserved",
+          "title": "Available and preserved",
+          "text": "It is not enough that content, data, and software be “open” if there is no practical way to obtain them. These resources should be made easily available with clear public documentation about where they are and how to access them, as well as an open licence where possible. It is not enough that “open” resources are available. In line with the Living Will, it is essential to deposit content, data, and software with at least one trusted third-party digital archive."
+        },
+        {
+          "id": "patent-non-assertion",
+          "title": "Patent non-assertion",
+          "text": "The organisation should commit to a patent non-assertion policy or covenant. The organisation may obtain patents to protect its own operations, but not use them to prevent the community from replicating the infrastructure."
+        },
+        {
+          "id": "interoperability-standards",
+          "title": "Prioritise interoperability and open standards to ensure continuity and resilience",
+          "text": "Infrastructures should adopt and support widely accepted open standards—both formal and de facto—to ensure that systems, data, and services can be replicated, migrated, or integrated with minimal disruption without the use of proprietary extensions or software. Where relevant, organisations should document dependencies on standards."
+        }
+      ]
+    }
+  ]
+}
