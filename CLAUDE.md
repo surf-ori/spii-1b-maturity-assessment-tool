@@ -15,7 +15,7 @@ and these context files. The tool itself lives at
 
 `.github/ISSUE_TEMPLATE/feedback.yml` collects name, organisation, role, and "representing
 infrastructure" alongside the feedback itself, so the origin of each issue stays traceable. See
-`AGENDA.md` for how to process incoming issues.
+`AGENTS.md` for how to process incoming issues.
 
 ## Way of working
 
