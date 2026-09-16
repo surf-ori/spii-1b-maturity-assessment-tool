@@ -649,6 +649,7 @@
 
             const CHANGELOG_HTML =
                 "<dl>" +
+                '<dt>2026-09-16</dt><dd>Reordered the framework tabs and sidebar to SPII, POSI, GORC, FAIR, BD, OSR, and renamed three tab labels to match: “SPII v0.0.1 Assessment” is now “SPII v0.1 Assessment”, “BD Assessment v1.0” is now “BD v1.0 Assessment”, and “FAIR Principles Assessment” is now “FAIR v1.0 Assessment”. Sidebar framework sections now start collapsed (previously POSI, the only non-draft framework, started open) and behave as a single-open accordion — selecting a framework, from a tab or a sidebar link, expands its section and collapses every other one. The URL now tracks the open framework as a hash (e.g. <code>#gorc</code>), updated as you switch, and read back on load or if it changes while the page is open, so a link straight to one framework works and the address bar always matches what’s open.</dd>' +
                 '<dt>2026-09-16</dt><dd>Reskinned to match the <a href="https://surf-ori.github.io/spii-overview/">SPII overview</a> page: swapped Oat’s and this tool’s own default color tokens for spii-overview’s palette (page background, cards, borders, the compliant/accent green, and hover tints), and self-hosted Outfit and IBM Plex Mono in place of the “Source Sans 3” Google Fonts load, which — per the 2026-09-15 entry below — had never actually resolved anyway. Oat’s own component structure (tabs, dialogs, dropdowns) is unchanged; only the tokens it reads from are new.</dd>' +
                 '<dt>2026-09-16</dt><dd>Moved to <a href="https://github.com/surf-ori/spii-1b-maturity-assessment-tool">github.com/surf-ori/spii-1b-maturity-assessment-tool</a>, now also live at <a href="https://surf-ori.github.io/spii-1b-maturity-assessment-tool/">surf-ori.github.io/spii-1b-maturity-assessment-tool</a>. This repository also doubles as SPII deliverable 1B’s feedback tracker: open an issue here to propose a correction, flag a gap, or suggest an addition.</dd>' +
                 '<dt>2026-09-16</dt><dd>Shortened two framework tab labels so they read better in the tab strip and sidebar nav: “Barcelona Declaration Assessment” is now “BD Assessment v1.0”, and “GORC International Model Assessment” is now “GORC v1.1 Assessment”. The full names (Barcelona Declaration on Open Research Information; Global Open Research Commons (GORC) International Model, version 1.1) are unchanged in each framework’s “About” accordion text — only the short `title` field used for the tab/sidebar/heading changed.</dd>' +
@@ -705,7 +706,7 @@
                 return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
             }
 
-            const BUILTIN_FRAMEWORK_FILES = ["data/frameworks/posi.json", "data/frameworks/spii.json", "data/frameworks/osr.json", "data/frameworks/bd.json", "data/frameworks/gorc.json", "data/frameworks/fair.json"];
+            const BUILTIN_FRAMEWORK_FILES = ["data/frameworks/spii.json", "data/frameworks/posi.json", "data/frameworks/gorc.json", "data/frameworks/fair.json", "data/frameworks/bd.json", "data/frameworks/osr.json"];
 
             async function load_builtin_frameworks() {
                 const loaded = await Promise.all(
@@ -1047,10 +1048,29 @@
                 document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
                     panel.hidden = panel.id !== "tabpanel-" + tabId;
                 });
+                // Sidebar framework groups are a single-open accordion: whichever
+                // group matches the active tab opens, every other one collapses.
+                document.querySelectorAll('#sidebar-nav details[data-framework-id]').forEach((details) => {
+                    details.open = details.dataset.frameworkId === tabId;
+                });
                 if (all_frameworks().some((f) => f.id === tabId)) {
                     activeFrameworkId = tabId;
                     update_badge();
+                    history.replaceState(null, "", "#" + tabId);
+                } else {
+                    history.replaceState(null, "", location.pathname + location.search);
                 }
+            }
+
+            // Reads the framework id from the URL hash (case-insensitive, so
+            // "#GORC" and "#gorc" both match), if any built-in or custom
+            // framework has that id. Usable before boot() sets up `state`
+            // (falls back to just the built-ins, since nothing else exists yet).
+            function framework_id_from_hash() {
+                const raw = location.hash.slice(1).toLowerCase();
+                if (!raw) return null;
+                const pool = state ? all_frameworks() : FRAMEWORKS;
+                return pool.some((f) => f.id === raw) ? raw : null;
             }
 
             function navigate_to(tabId, anchorId) {
@@ -1071,7 +1091,8 @@
                 all_frameworks().forEach((framework) => {
                     const li = document.createElement("li");
                     const groupDetails = document.createElement("details");
-                    groupDetails.open = !framework.draft;
+                    groupDetails.dataset.frameworkId = framework.id;
+                    groupDetails.open = framework.id === activeTabId;
                     const summary = document.createElement("summary");
                     const a = document.createElement("a");
                     a.href = "#framework-" + framework.id;
@@ -2003,10 +2024,21 @@
                     return;
                 }
                 activeFrameworkId = FRAMEWORKS[0].id;
+                // A URL hash naming a framework (e.g. "#gorc") opens straight
+                // to that framework's tab, with its sidebar group expanded.
+                const hashFrameworkId = framework_id_from_hash();
+                if (hashFrameworkId) {
+                    activeTabId = hashFrameworkId;
+                    activeFrameworkId = hashFrameworkId;
+                }
                 state = initial_state();
                 render();
                 await load_from_url_params();
             }
+            window.addEventListener("hashchange", () => {
+                const hashFrameworkId = framework_id_from_hash();
+                if (hashFrameworkId && hashFrameworkId !== activeTabId) switch_tab(hashFrameworkId);
+            });
             boot();
         </script>
     </body>

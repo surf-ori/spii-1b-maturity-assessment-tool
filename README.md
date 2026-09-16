@@ -12,26 +12,12 @@ Six frameworks are included today, each as its own JSON file under
 [`data/frameworks/`](data/frameworks/) — edit them directly to tweak
 principles, criteria, or copy, no code changes needed:
 
+- **SPII v0.1** (draft, [`spii.json`](data/frameworks/spii.json)) — 19
+  principles across Openness, Autonomy, Sustainability, Interoperability,
+  and Researcher-centric.
 - **[Principles of Open Scholarly Infrastructure (POSI) v2.0](https://openscholarlyinfrastructure.org/)**
   ([`posi.json`](data/frameworks/posi.json)) — 20 principles across
   Governance, Sustainability, and Insurance.
-- **SPII v0.0.1** (draft, [`spii.json`](data/frameworks/spii.json)) — 19
-  principles across Openness, Autonomy, Sustainability, Interoperability,
-  and Researcher-centric.
-- **OSR v0.1** (draft, [`osr.json`](data/frameworks/osr.json)) — 25
-  principles adapting Jeroen Bosman and Jeroen Sondervan's [open science
-  resilience model](https://upstream.force11.org/the-resilience-of-open-science-in-times-of-crisis/),
-  related to the International Science Council's [*Protecting Science in
-  Times of Crisis*](https://doi.org/10.24948/2024.01) (2024). Five areas of
-  concern (funding, infrastructure, academic freedom, safety,
-  disinformation), each scored across five resilience types (prevention,
-  protection, resistance, withstanding, repair).
-- **BD Assessment v1.0** (draft, [`bd.json`](data/frameworks/bd.json))
-  — 8 principles adapting the four commitments of the [Barcelona
-  Declaration on Open Research Information](https://www.barcelona-declaration.org)
-  (2024): making openness the default, working with open-enabling services
-  and systems, supporting infrastructure sustainability, and coordinating
-  collective action.
 - **GORC v1.1 Assessment** (draft, [`gorc.json`](data/frameworks/gorc.json))
   — 55 principles adapting the Research Data Alliance's [Global Open
   Research Commons (GORC) International Model, version
@@ -42,11 +28,25 @@ principles, criteria, or copy, no code changes needed:
   Participation & Access, Sustainability, Engagement, Human Capacity,
   Interoperability, Standards & Conventions, ICT Infrastructure, Services &
   Tools, and Research Objects.
-- **FAIR Principles Assessment** (draft, [`fair.json`](data/frameworks/fair.json))
+- **FAIR v1.0** (draft, [`fair.json`](data/frameworks/fair.json))
   — 15 principles transcribing the [FAIR Guiding
   Principles](https://www.gofair.foundation/fair-principles) (Wilkinson et
   al., 2016) verbatim: Findable, Accessible, Interoperable, and Reusable,
   covering both data and metadata.
+- **BD v1.0** (draft, [`bd.json`](data/frameworks/bd.json))
+  — 8 principles adapting the four commitments of the [Barcelona
+  Declaration on Open Research Information](https://www.barcelona-declaration.org)
+  (2024): making openness the default, working with open-enabling services
+  and systems, supporting infrastructure sustainability, and coordinating
+  collective action.
+- **OSR v0.1** (draft, [`osr.json`](data/frameworks/osr.json)) — 25
+  principles adapting Jeroen Bosman and Jeroen Sondervan's [open science
+  resilience model](https://upstream.force11.org/the-resilience-of-open-science-in-times-of-crisis/),
+  related to the International Science Council's [*Protecting Science in
+  Times of Crisis*](https://doi.org/10.24948/2024.01) (2024). Five areas of
+  concern (funding, infrastructure, academic freedom, safety,
+  disinformation), each scored across five resilience types (prevention,
+  protection, resistance, withstanding, repair).
 
 ## Features
 
@@ -60,9 +60,8 @@ principles, criteria, or copy, no code changes needed:
   unanswered) next to every principle in the sidebar navigation, so you can
   see progress at a glance without opening each section.
 - **Bring your own framework** — import a custom assessment framework
-  (JSON) at runtime alongside POSI, SPII, OSR, BD Assessment v1.0, GORC
-  v1.1 Assessment, and the FAIR Principles Assessment, download a
-  template to help author one, and export whichever frameworks are
+  (JSON) at runtime alongside SPII, POSI, GORC, FAIR, BD, and OSR, download
+  a template to help author one, and export whichever frameworks are
   currently loaded.
 - **Export as JSON** — download your results and reload them later to
   continue or revise an assessment.
@@ -106,6 +105,14 @@ report and/or a custom framework automatically from query parameters:
 - `index.html?framework=custom2.json&report=report5.json` — both at once;
   the framework loads first, so the report's scores for it (if any) apply
   on top rather than being lost.
+
+### Linking directly to a framework
+
+`index.html#gorc` (or any framework id — `spii`, `posi`, `gorc`, `fair`, `bd`, `osr`, matched
+case-insensitively) opens straight to that framework's tab, with its sidebar section expanded
+and every other framework's section collapsed. Selecting a framework tab in the app updates the
+URL the same way, so the address bar always reflects which framework is open and can be shared
+or bookmarked.
 
 ## Feedback
 
