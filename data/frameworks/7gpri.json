@@ -1,0 +1,93 @@
+{
+  "id": "7gpri",
+  "title": "7GPRI v1.0 Assessment",
+  "shortName": "7GPRI",
+  "description": "A draft framework adapting the Seven Guiding Principles for Open Research Information (2022) — provenance, openness of metadata and algorithms, enduring access, open standards, open collaboration, and academic sovereignty through governance.",
+  "aboutHtml": "<p>The <a href=\"https://www.universiteitenvannederland.nl/files/documenten/Nieuwsberichten/Guiding%20Principles%20on%20Management%20of%20Research%20Information%20and%20Data_11May.pdf\">Seven Guiding Principles for Open Research Information</a> (February 2022) were developed by the Dutch Taskforce on Responsible Management of Research Information and Data, established by the Association of Universities in the Netherlands (UNL), the Netherlands Federation of University Medical Centres (NFU), and the Dutch Research Council (NWO). A first version (V1.0, March 2020) shaped the Dutch knowledge institutions' Framework Agreement with Elsevier; this revised version incorporates feedback from a 2020 public consultation. The principles focus on research information — metadata describing research outputs (publications, software, datasets), including derived and enriched metadata — and are not about research data itself.</p><p>The seven principles are: (GP1) Trusted and transparent provenance; (GP2) Openness of metadata; (GP3) Openness of algorithms; (GP4) Enduring access and availability; (GP5) Open standards and interoperability; (GP6) Open collaboration with third parties; (GP7) Academic sovereignty through governance. Academic sovereignty (GP7) is the overarching value the other principles serve.</p><p>This is not an official assessment instrument — the source document addresses knowledge institutions and their contracts with third parties, with no per-infrastructure scoring mechanism. Each principle's quoted requirement is transcribed verbatim as its text; the compliant/progress/non-compliant criteria and improvement actions are this tool's own attempt to operationalise them for an Open Science infrastructure (or the organisation behind it) to self-assess against. As a draft, the criteria are likely to change.</p><p>Cite as: Bijsterbosch, M., Dunning, A., Jansen, D., Haring, M., de Rijcke, S., &amp; Vanderfeesten, M. (2022). Seven Guiding Principles for Open Research Information. Dutch Taskforce on Responsible Management of Research Information and Data.</p>",
+  "draft": true,
+  "sections": [
+    {
+      "section": "Seven Guiding Principles for Open Research Information",
+      "sourceUrl": "https://www.universiteitenvannederland.nl/files/documenten/Nieuwsberichten/Guiding%20Principles%20on%20Management%20of%20Research%20Information%20and%20Data_11May.pdf",
+      "principles": [
+        {
+          "id": "gpri-1-provenance",
+          "title": "GP1. Trusted and transparent provenance",
+          "text": "Within any infrastructure or service for research metadata, the provenance of the metadata, and the related algorithms, must be clear.",
+          "criteria": {
+            "compliant": "The infrastructure publishes clear provenance for all its metadata and the algorithms or processes that create or modify it — including how metadata is created and changed over time — in enough detail for the process to be replicated by others.",
+            "progress": "Some provenance information is available for parts of the metadata or algorithms, but it is incomplete, not consistently maintained, or not detailed enough to be replicated.",
+            "non-compliant": "The infrastructure does not display or make available the provenance of its metadata or algorithms."
+          },
+          "improvementAction": "Document and publish how each metadata field and any derived or enriched values are created and modified over time, in enough detail for the process to be replicated by others."
+        },
+        {
+          "id": "gpri-2-openness-metadata",
+          "title": "GP2. Openness of metadata",
+          "text": "Knowledge institutions must release metadata related to research output as openly as possible, ideally as CC0.",
+          "criteria": {
+            "compliant": "All metadata about research output held by the infrastructure, including post-publication enrichments, is released as openly as possible, ideally under CC0, and this is a contractual requirement of any third party involved.",
+            "progress": "Some metadata is openly released, but not consistently, not under CC0 or an equivalently open licence, or enrichments and derived metadata are excluded.",
+            "non-compliant": "Metadata is closed by default, or requires a paid subscription or restrictive licence to access."
+          },
+          "improvementAction": "Adopt a CC0 (or equivalently open) licence for all metadata the infrastructure holds or produces, including enrichments, and require the same of any third party it contracts with."
+        },
+        {
+          "id": "gpri-3-openness-algorithms",
+          "title": "GP3. Openness of algorithms",
+          "text": "Algorithms and other techniques and methodology used to analyse and report on scholarly outputs must be available for public inspection.",
+          "criteria": {
+            "compliant": "Any algorithm, technique, or methodology the infrastructure uses to analyse or report on scholarly outputs is published and open to public inspection, in enough detail for its results to be reproduced.",
+            "progress": "Some algorithms or methods are documented or partially disclosed, but not all, or not in enough detail to reproduce results.",
+            "non-compliant": "Algorithms used to analyse or report on scholarly outputs are undisclosed ('black box')."
+          },
+          "improvementAction": "Publish the methodology or recipe behind every algorithm used to analyse or report on scholarly output, and work towards making results reproducible."
+        },
+        {
+          "id": "gpri-4-enduring-access",
+          "title": "GP4. Enduring access and availability",
+          "text": "Knowledge institutes and third-party services must facilitate complete, non-discriminatory and enduring access to primary metadata and enriched metadata without functional, technical, legal, or financial limitations.",
+          "criteria": {
+            "compliant": "The infrastructure guarantees complete, non-discriminatory, enduring access to primary and enriched metadata without functional, technical, legal, or financial limitations, and any third-party services it depends on have agreements in place to preserve that access, including data export if a service is discontinued.",
+            "progress": "Access is available but with some limitations, such as rate limits, partial export, or a dependency on a service with no documented continuity agreement.",
+            "non-compliant": "Access to metadata can be revoked, paywalled, or lost with no continuity or export guarantee."
+          },
+          "improvementAction": "Put contractual or technical guarantees in place, including a documented export or transfer path, for enduring access to metadata held by any third-party service the infrastructure depends on."
+        },
+        {
+          "id": "gpri-5-open-standards",
+          "title": "GP5. Open standards & interoperability",
+          "text": "All stakeholders must agree to work towards common definitions and open standards for exchanging and describing both metadata and algorithms.",
+          "criteria": {
+            "compliant": "The infrastructure implements open, community-agreed standards for exchanging and describing metadata and algorithms, documents any deviations, and invests in bringing its metadata quality up to the standard's requirements.",
+            "progress": "Some open standards are used, but implementation is partial, undocumented, or metadata quality does not yet meet the standard's requirements.",
+            "non-compliant": "The infrastructure uses closed, proprietary, or undocumented formats for its metadata or algorithms."
+          },
+          "improvementAction": "Adopt and document conformance to an open, community-governed standard (e.g. the OpenAIRE Guidelines) for every metadata type and algorithm the infrastructure exposes."
+        },
+        {
+          "id": "gpri-6-open-collaboration",
+          "title": "GP6. Open collaboration with third parties",
+          "text": "Knowledge institutions and third parties must engage in open collaboration where innovation, competition, and public value are recognised and respected cornerstones.",
+          "criteria": {
+            "compliant": "The infrastructure actively works with third parties, including smaller providers and start-ups, on a level playing field, avoids bundling itself into closed mega-applications, and has a documented exit strategy to avoid vendor lock-in.",
+            "progress": "Some open collaboration exists, but the infrastructure is still dependent on a small number of bundled, tightly-integrated third-party services with no documented exit strategy.",
+            "non-compliant": "The infrastructure is locked into closed, bundled third-party services with no path to switch or exit."
+          },
+          "improvementAction": "Break large third-party dependencies into smaller, interoperable components, and define and document an exit strategy for each critical third-party service."
+        },
+        {
+          "id": "gpri-7-governance",
+          "title": "GP7. Academic sovereignty through governance",
+          "text": "A suitable governance structure must be established in order to fully implement the principles, and to ensure that stakeholders remain engaged and share accountability towards the community goals and values.",
+          "criteria": {
+            "compliant": "The infrastructure has an established, documented governance structure that defines decision-making, conflict resolution including an arbitration mechanism, and mutual rights and obligations, with the research community holding a meaningful role.",
+            "progress": "Some governance exists, but it is informal, undocumented, dominated by a single stakeholder, or lacks a conflict-resolution mechanism.",
+            "non-compliant": "No governance structure exists, or decisions about the infrastructure are made unilaterally by a commercial or external party."
+          },
+          "improvementAction": "Establish a documented governance structure, covering decision-making, accountability, and dispute resolution, that gives the community it serves a meaningful role."
+        }
+      ]
+    }
+  ]
+}

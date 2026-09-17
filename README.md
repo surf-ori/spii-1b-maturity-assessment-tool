@@ -8,7 +8,7 @@ infrastructure, classify the activities it supports, and score it against
 one or more assessment frameworks as compliant / making progress / not
 compliant with optional notes, then export the result.
 
-Six frameworks are included today, each as its own JSON file under
+Seven frameworks are included today, each as its own JSON file under
 [`data/frameworks/`](data/frameworks/) — edit them directly to tweak
 principles, criteria, or copy, no code changes needed:
 
@@ -47,6 +47,14 @@ principles, criteria, or copy, no code changes needed:
   concern (funding, infrastructure, academic freedom, safety,
   disinformation), each scored across five resilience types (prevention,
   protection, resistance, withstanding, repair).
+- **7GPRI v1.0** (draft, [`7gpri.json`](data/frameworks/7gpri.json))
+  — 7 principles adapting the Dutch Taskforce on Responsible Management of
+  Research Information and Data's [Seven Guiding Principles for Open
+  Research Information](https://www.universiteitenvannederland.nl/files/documenten/Nieuwsberichten/Guiding%20Principles%20on%20Management%20of%20Research%20Information%20and%20Data_11May.pdf)
+  (February 2022): trusted and transparent provenance, openness of
+  metadata, openness of algorithms, enduring access and availability, open
+  standards and interoperability, open collaboration with third parties,
+  and academic sovereignty through governance.
 
 ## Features
 
@@ -60,9 +68,9 @@ principles, criteria, or copy, no code changes needed:
   unanswered) next to every principle in the sidebar navigation, so you can
   see progress at a glance without opening each section.
 - **Bring your own framework** — import a custom assessment framework
-  (JSON) at runtime alongside SPII, POSI, GORC, FAIR, BD, and OSR, download
-  a template to help author one, and export whichever frameworks are
-  currently loaded.
+  (JSON) at runtime alongside SPII, POSI, GORC, FAIR, BD, OSR, and 7GPRI,
+  download a template to help author one, and export whichever frameworks
+  are currently loaded.
 - **Export as JSON** — download your results and reload them later to
   continue or revise an assessment.
 - **Export as PDF** — download a report of the full assessment.
@@ -78,7 +86,7 @@ Also live at **[surf-ori.github.io/spii-1b-maturity-assessment-tool](https://sur
 step). Or serve the directory with any static file server (for example
 `python3 -m http.server`) and open `index.html` over http(s); there is
 nothing to install or build beyond that. **Opening `index.html` directly
-as a `file://` page no longer works** — the six built-in frameworks are
+as a `file://` page no longer works** — the seven built-in frameworks are
 loaded from [`data/frameworks/`](data/frameworks/) via `fetch()` at
 startup, and browsers block that kind of request from a `file://` page;
 you'll see a clear on-page message explaining this instead of a blank
@@ -108,7 +116,7 @@ report and/or a custom framework automatically from query parameters:
 
 ### Linking directly to a framework
 
-`index.html#gorc` (or any framework id — `spii`, `posi`, `gorc`, `fair`, `bd`, `osr`, matched
+`index.html#gorc` (or any framework id — `spii`, `posi`, `gorc`, `fair`, `bd`, `osr`, `7gpri`, matched
 case-insensitively) opens straight to that framework's tab, with its sidebar section expanded
 and every other framework's section collapsed. Selecting a framework tab in the app updates the
 URL the same way, so the address bar always reflects which framework is open and can be shared
