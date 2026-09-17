@@ -72,7 +72,7 @@ already covered) with a short rationale before closing it. Curators are not yet 
 one is, leave issues open for a human curator rather than closing them on your own judgement.
 
 If an agent drafts a closing comment or decision on an issue here, follow the
-`labeling-ai-generated-content` skill: say plainly that it was drafted with AI assistance.
+`eu-ai-act-transparency-label-for-ai-generated-content` skill: say plainly that it was drafted with AI assistance.
 
 **Saving a report to GitHub (2026-09-17)**: the Export menu's "Save Report to GitHub Tracker"
 (`save-report-github-btn` → `open_save_report_dialog()`) is the app's one concession to needing a

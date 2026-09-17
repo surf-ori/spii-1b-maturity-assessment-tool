@@ -1,5 +1,5 @@
 ---
-name: labeling-ai-generated-content
+name: eu-ai-act-transparency-label-for-ai-generated-content
 description: Use when drafting, editing, reviewing, or approving text, images, audio, or video for publication to an EU audience that involved AI generation or AI modification. Determines whether EU AI Act Article 50 disclosure applies, which obligation (provider marking vs deployer labeling) applies, and how to label it correctly.
 ---
 
