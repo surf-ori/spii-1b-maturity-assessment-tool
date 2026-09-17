@@ -110,6 +110,20 @@
                 }
             }
 
+            .back-bar {
+                padding: 6px 16px;
+                font-size: 13px;
+                border-bottom: 1px solid var(--border);
+                background: var(--background);
+            }
+            .back-bar a {
+                color: var(--muted-foreground);
+                text-decoration: none;
+            }
+            .back-bar a:hover {
+                color: var(--primary);
+            }
+
             body {
                 margin: 0;
                 font-family: var(--font-sans);
@@ -432,6 +446,7 @@
                 #sidebar-footer button,
                 [data-sidebar-toggle],
                 nav[data-topnav],
+                .back-bar,
                 aside[data-sidebar] > nav {
                     display: none;
                 }
@@ -459,6 +474,7 @@
             body.printing #sidebar-footer button,
             body.printing [data-sidebar-toggle],
             body.printing nav[data-topnav],
+            body.printing .back-bar,
             body.printing aside[data-sidebar] > nav,
             body.printing .status-card:not(.selected) {
                 display: none;
@@ -856,6 +872,8 @@
     </head>
     
     <body>
+
+        <div class="back-bar"><a href="https://surf-ori.github.io/spii-overview/">&larr; Back to spii-overview</a></div>
 
         <div data-sidebar-layout id="app-shell">
             <nav data-topnav>
